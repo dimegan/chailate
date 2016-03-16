@@ -1,0 +1,272 @@
+header{
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+/*Menu*/
+.navbar-brand{
+	font-size: 20px;
+	line-height: 22px;
+}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand{
+	color: #fff;	
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-brand:hover{
+	color: #000;
+}
+.navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+}
+/*Helpers*/
+.coco-color{
+	background-color: #FF3366;
+	border-color: #FF3366;
+}
+
+.coco-color a{
+	color: #fff;
+}
+a.coco-color, input.coco-color{
+	border-color: #D21141;
+}
+a.coco-color:hover, input.coco-color:hover{
+	background-color: #D21141;
+	border-color: #AB0A32;
+}
+/*Content*/
+.intro-header{ 
+	
+	background-size: cover;
+	background: url(../img/home.jpg) repeat center center;
+	background-color: #000;
+	min-height: 500px;
+	color: #fff;
+	padding: 50px;
+	text-align: center;
+	overflow: hidden;
+}
+.home-landing{
+	height: 100vh;
+}
+.jumbotron{
+	background-color: initial;
+}
+.jumbotron a{
+	margin-top: 50px;
+}
+.home-section{
+	/*padding-top: 48px;*/
+	padding-top: 28px;
+	padding-bottom: 48px;
+	text-align: center;
+}
+.home-section h2{
+	font-size: 50px;
+	margin-top: 0;
+	padding-top: 20px;
+	margin-bottom: 80px;
+}
+.home-section p, footer, nav{
+	font-size: 20px;
+}
+.my-work{
+	/*hack for scroll to contact page. Becouse the image take a time for load*/
+	min-height: 1050px;
+}
+.coco-summary p{
+	max-width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.8em;
+}
+.coco-summary h2{
+	margin-bottom: 50px;	
+}
+.feature-design{
+	background-color: #8D708E;
+}
+.feature-mrkt{
+	background-color: #807FFF;
+}
+.feature-dev{
+	background-color: #1ABC9C;
+}
+.feature-photos{
+	background-color: #16A085;
+}
+.inner-feature{
+	padding: 60px 10px 70px;	
+}
+.inner-feature h3{
+	min-height: 66px;
+	margin-top: 30px;
+	font-size: 30px;
+}
+.coco-service a{
+	color: #fff;
+}
+/*helper*/
+.coco-transition{
+	transition: all 0.6s ease;
+	-webkit-transition: all 0.6s ease; /* Chrome */
+}
+/*Work section*/
+
+.center-item{
+	padding: 20px;
+}
+.work-wrapper{
+	position: relative;
+}
+.work-details{
+	opacity: 0;
+	position: absolute;
+    bottom: 40%;
+    padding: 0 20px;
+    color: #fff;
+}
+.work-details h4{
+	line-height: 1.3em;
+    font-weight: normal;
+    font-size: 20px;
+}
+/*active animation*/
+.work-item:hover img{
+	-webkit-filter: brightness(45%);
+	filter: brightness(30%);
+}
+.work-item:hover .work-details{
+	opacity: 1;
+}
+.feature-design h2,.feature-mrkt h2,.feature-photos h2,.feature-dev h2{
+	color: #fff;
+}
+/*Contact section*/
+.contact, footer{
+	background-color: #232525;
+	color: #fff;
+}
+.contact h2{
+	margin-bottom: 
+}
+.contact input[type=text], .contact textarea{
+	margin-bottom: 30px;
+	font-size: 20px;
+	padding: 20px 15px;
+}
+.contact textarea{
+	padding: 10px 15px;
+}
+.contact-data{
+	margin-top: 40px;
+}
+.contact-data p{
+	display: block;
+	margin-bottom: 20px;
+	font-size: 28px;
+}
+.contact-data .glyphicon{
+	margin-right: 10px;
+}
+.footer-menu{
+	margin: 20px;
+    float: right;
+}
+.footer-menu a{
+	color: #FF3366;	
+	margin-right: 20px;
+}
+/*Animation for service list*/
+/*default setings*/
+.coco-service{
+	transition: all 0.6s ease;
+	-webkit-transition: all 0.6s ease; /* Chrome */
+	min-height: 330px;
+}
+.coco-service p{
+	/*Hide service details*/
+	display: none;
+}
+/*trigger animation*/
+.coco-service:hover{
+	background-color: #FF3366;
+}
+.coco-service:hover h3{
+	margin-top: 0;
+}
+.coco-service:hover img{
+	display: none;
+}
+.coco-service:hover p{
+	display: block;
+}
+.coco-service a:hover{
+	text-decoration: none;
+}
+/*Tablets and smartphones*/
+@media (max-width: 768px){
+	.inner-feature{
+		margin: 0;
+		padding: 50px 0 40px;
+	}
+	.inner-feature h3{
+		min-height: inherit;
+	}
+}
+/*Smartphones*/
+@media (max-width: 568px){
+	.footer-menu{
+		float: inherit;
+	}
+	.footer-menu>li{
+		display: block;
+	}
+}
+
+/*Details photos*/
+.photos-back{
+	background: url(../img/details/photos/alebrijes.jpg) repeat center center;	
+}
+
+/*image gallery*/
+.modal-dialog.gallery-modal{
+	max-width: 650px;
+}
+.animate-enter {
+	-webkit-transition: 5s linear all; /* Chrome */
+	transition: 5s linear all;
+	opacity: 0;
+}
+.animate-enter.animate-enter-active {
+	opacity: 1;
+}
+/*Animation photos gallery*/
+.gall-image{
+	float: left;
+	height: 200px;
+	width: auto;
+	margin: 10px;
+}
+
+/*widget/gallery*/
+#photos-portfolio{
+	margin-bottom: 20px;
+}
+
+.text-color-anim{
+    color: #f35626;
+    background-image: -webkit-linear-gradient(180deg,#807FFF,#FF3366);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 5s infinite linear;
+}
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
