@@ -1,0 +1,74 @@
+[
+	{
+		"photoId" : 1,
+		"title": "New Foto de Maria y Edith para la revista Xilo 1",
+		"imageUrl": "img/details/photos/trece.jpg",
+		"isVisible" : false
+	},
+	{
+		"photoId" : 2,
+		"title": "New Foto de Maria y Edith para la revista Xilo 2",
+		"imageUrl": "img/details/photos/uno.jpg",
+		"isVisible" : false
+	},
+	{
+		"photoId" : 3,
+		"title": "New Foto de Maria y Edith para la revista Xilo 3",
+		"imageUrl": "img/details/photos/tres.jpg",
+		"isVisible" : false
+	},
+	{
+		"photoId" : 4,
+		"title": "New Foto de Maria y Edith para la revista Xilo 4",
+		"imageUrl": "img/details/photos/siete.jpg",
+		"isVisible" : false
+	},
+	{
+		"photoId" : 5,
+		"title": "foto1",
+		"imageUrl": "img/details/photos/dos.jpg",
+		"isVisible" : false
+	},
+	{
+		"photoId" : 6,
+		"title": "foto2",
+		"imageUrl": "img/details/photos/once.jpg",
+		"isVisible" : false
+	},
+	{
+		"photoId" : 7,
+		"title": "foto1",
+		"imageUrl": "img/details/photos/ocho.jpg",
+		"isVisible" : false
+	},
+	{
+		"photoId" : 8,
+		"title": "foto2",
+		"imageUrl": "img/details/photos/nueve.jpg",
+		"isVisible" : false
+	},
+	{
+		"photoId" : 9,
+		"title": "foto2",
+		"imageUrl": "img/details/photos/diez.jpg",
+		"isVisible" : false
+	},
+	{
+		"photoId" : 10,
+		"title": "foto1",
+		"imageUrl": "img/details/photos/cuatro.jpg",
+		"isVisible" : false
+	},
+	{
+		"photoId" : 11,
+		"title": "foto2",
+		"imageUrl": "img/details/photos/cinco.jpg",
+		"isVisible" : false
+	},
+	{
+		"photoId" : 12,
+		"title": "foto2",
+		"imageUrl": "img/details/photos/tres.jpg",
+		"isVisible" : false
+	}
+]

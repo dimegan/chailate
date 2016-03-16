@@ -1,0 +1,65 @@
+[
+	{
+		"imgid" : 1,
+		"title": "clase-brake",
+		"imageUrl": "img/work/breake.jpg",
+		"details" : "Imagen diseñada para publicidad de la academia Tutu",
+		"serviceType" : 1
+	},
+	{
+		"imgid" : 2,
+		"title": "clase-ballete",
+		"imageUrl": "img/work/tutu-ofertas.jpg",
+		"details" : "Imagen diseñada para publicidad de la academia Tutu",
+		"serviceType" : 1
+	},
+	{
+		"imgid" : 5,
+		"title": "clase-acondicionamiento",
+		"imageUrl": "img/work/acondicionamiento.jpg",
+		"details" : "Imagen diseñada para publicidad de la academia Tutu",
+		"serviceType" : 1
+	},
+	{
+		"imgid" : 6,
+		"title": "banda-corvett",
+		"imageUrl": "img/work/corvett.jpg",
+		"details" : "Imagen diseñada para publicidad de la academia Tutu",
+		"serviceType" : 4
+	},
+	{
+		"imgid" : 7,
+		"title": "foto-navix",
+		"imageUrl": "img/work/foto-navix.jpg",
+		"details" : "Imagen diseñada para publicidad de la academia Tutu",
+		"serviceType" : 4
+	},
+	{
+		"imgid" : 8,
+		"title": "los-corvett",
+		"imageUrl": "img/work/foto-corvett.jpg",
+		"details" : "Imagen diseñada para publicidad de la academia Tutu",
+		"serviceType" : 4
+	},
+	{
+		"imgid" : 9,
+		"title": "sitio-quehay",
+		"imageUrl": "img/work/quehay-site.jpg",
+		"details" : "Desarrollo de sitio web para la revista xilo",
+		"serviceType" : 3
+	},
+	{
+		"imgid" : 10,
+		"title": "sitio-fotos",
+		"imageUrl": "img/work/photo-site.jpg",
+		"details" : "Desarrollo de sitio web para la revista xilo",
+		"serviceType" : 3
+	},
+	{
+		"imgid" : 11,
+		"title": "sitio-revista-xilo",
+		"imageUrl": "img/work/revista-xilo.jpg",
+		"details" : "Desarrollo de sitio web para la revista xilo",
+		"serviceType" : 3
+	}
+]
