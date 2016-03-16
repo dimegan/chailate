@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
 
-	var core = angular.module('cocoApp.core');
+	var core = angular.module('chaiApp.core');
 
 	//core.value('config', config);
 

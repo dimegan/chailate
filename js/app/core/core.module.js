@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('cocoApp.core', [
+    angular.module('chaiApp.core', [
         /*
          * Angular modules
          */

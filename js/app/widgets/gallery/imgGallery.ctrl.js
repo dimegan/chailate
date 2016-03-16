@@ -1,7 +1,7 @@
 (function(){
 	'use strict';
 
-	angular.module('cocoApp.widgets').controller('ImgGalleryCtrl', ImgGalleryCtrl);
+	angular.module('chaiApp.widgets').controller('ImgGalleryCtrl', ImgGalleryCtrl);
 
 	function ImgGalleryCtrl($scope, dataservice, $timeout, $window){
 		var vm = this;

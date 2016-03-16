@@ -1,12 +1,12 @@
 (function () {
 	'use strict';
-	angular.module( 'cocoApp', [
-		'cocoApp.core',
-		'cocoApp.widgets',
-		'cocoApp.home',
-		'cocoApp.design',
-		'cocoApp.mkt',
-		'cocoApp.dev',
-		'cocoApp.photo'
+	angular.module( 'chaiApp', [
+		'chaiApp.core',
+		'chaiApp.widgets',
+		'chaiApp.home',
+		'chaiApp.design',
+		'chaiApp.mkt',
+		'chaiApp.dev',
+		'chaiApp.photo'
 	]);
 })();

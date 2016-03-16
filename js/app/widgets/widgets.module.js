@@ -1,5 +1,5 @@
 (function() {
 	'use strict';
 
-	angular.module('cocoApp.widgets', []);
+	angular.module('chaiApp.widgets', []);
 })();

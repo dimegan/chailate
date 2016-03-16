@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 	/* The name of the directives must star with lower case*/
-	angular.module('cocoApp.widgets').directive('imageGallery', imageGallery);
+	angular.module('chaiApp.widgets').directive('imageGallery', imageGallery);
 
 	function imageGallery(dataservice, $timeout, $window) {
 

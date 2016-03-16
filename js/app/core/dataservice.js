@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
 
-	angular.module('cocoApp.core').factory('dataservice', dataservice);
+	angular.module('chaiApp.core').factory('dataservice', dataservice);
 
 	function dataservice($http){
 		var service = {

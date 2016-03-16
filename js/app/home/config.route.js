@@ -1,6 +1,6 @@
 (function () {
 	'use strict';
-	angular.module('cocoApp.home').run(appRun);
+	angular.module('chaiApp.home').run(appRun);
 
 	function appRun(routehelper){
 		routehelper.configureRoutes(getRoutes());

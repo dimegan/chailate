@@ -1,5 +1,5 @@
 (function() {
 	'use strict';
 
-	angular.module('cocoApp.mkt', []);
+	angular.module('chaiApp.mkt', []);
 })();

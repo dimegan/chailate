@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 
-	angular.module('cocoApp.photo').run(appRun);
+	angular.module('chaiApp.photo').run(appRun);
 
 	function appRun(routehelper){
 		routehelper.configureRoutes(getRoutes());

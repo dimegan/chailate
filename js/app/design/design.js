@@ -1,7 +1,7 @@
 ( function() {
 	'use strict';
 
-	angular.module('cocoApp.design').controller('DesignCtrl', DesignCtrl);
+	angular.module('chaiApp.design').controller('DesignCtrl', DesignCtrl);
 
 	/**@ngInject*/
 	function DesignCtrl(dataservice, $timeout, $window){

@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 	/* The name of the directives must star with lower case*/
-	angular.module('cocoApp.widgets').directive('coImageModal', coImageModal);
+	angular.module('chaiApp.widgets').directive('coImageModal', coImageModal);
 
 	function coImageModal() {
 

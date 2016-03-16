@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 
-	angular.module('cocoApp.mkt').run(appRun);
+	angular.module('chaiApp.mkt').run(appRun);
 
 	function appRun(routehelper){
 		routehelper.configureRoutes(getRoutes());

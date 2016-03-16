@@ -1,4 +1,4 @@
 ( function() {
 	'use strict';
-	angular.module('cocoApp.photo', []);
+	angular.module('chaiApp.photo', []);
 })();

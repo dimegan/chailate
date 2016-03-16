@@ -1,7 +1,7 @@
 ( function() {
 	'use strict';
 
-	angular.module('cocoApp.home').controller('HomeCtrl', HomeCtrl);
+	angular.module('chaiApp.home').controller('HomeCtrl', HomeCtrl);
 
 	/**@ngInject*/
 	function HomeCtrl(dataservice, $routeParams){
