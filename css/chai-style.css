@@ -169,6 +169,16 @@ a.coco-color:hover, input.coco-color:hover{
 .contact-data .glyphicon{
 	margin-right: 10px;
 }
+/*Smartphone style*/
+@media (max-width: 568px){
+	h2.contact-title{
+		font-size: 40px;
+	}
+	.contact-data .contact-email, .contact-data .contact-phone{
+		font-size: 20px;
+	}
+
+}
 .footer-menu{
 	margin: 20px;
     float: right;
