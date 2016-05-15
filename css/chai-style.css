@@ -17,11 +17,28 @@ header{
 .navbar{
 	margin-bottom: 0;
 	border-radius: 0;
+	border: 0;
+}
+.navbar .chai-brand-logo{
+	
+}
+.chai-brand-logo img{
+	margin-left: 20px;
+}
+.navbar-nav>li>a{
+	line-height: 40px;	
+}
+.navbar-default .navbar-toggle{
+	margin-top: 18px;
+	margin-bottom: 18px;
 }
 /*Helpers*/
 .coco-color{
 	background-color: #FF3366;
 	border-color: #FF3366;
+}
+.chai-dark-color{
+	background-color: #242424;
 }
 
 .coco-color a{
@@ -36,10 +53,8 @@ a.coco-color:hover, input.coco-color:hover{
 }
 /*Content*/
 .intro-header{ 
-	
 	background-size: cover;
-	background: url(../img/home.jpg) repeat center center;
-	background-color: #000;
+	background-color: #242424;
 	min-height: 500px;
 	color: #fff;
 	padding: 50px;
@@ -84,16 +99,16 @@ a.coco-color:hover, input.coco-color:hover{
 	margin-bottom: 50px;	
 }
 .feature-design{
-	background-color: #8D708E;
+	background-color: #D896A0;
 }
 .feature-mrkt{
-	background-color: #807FFF;
+	background-color: #671975;
 }
 .feature-dev{
-	background-color: #1ABC9C;
+	background-color: #B15983;
 }
 .feature-photos{
-	background-color: #16A085;
+	background-color: #9AD6D4;
 }
 .inner-feature{
 	padding: 60px 10px 70px;	
@@ -143,8 +158,8 @@ a.coco-color:hover, input.coco-color:hover{
 	color: #fff;
 }
 /*Contact section*/
-.contact, footer{
-	background-color: #232525;
+.contact{
+	background-color: #B15983;
 	color: #fff;
 }
 .contact h2{
@@ -179,12 +194,15 @@ a.coco-color:hover, input.coco-color:hover{
 	}
 
 }
+.logo-footer{
+	margin: 14px 20px;
+}
 .footer-menu{
 	margin: 20px;
     float: right;
 }
 .footer-menu a{
-	color: #FF3366;	
+	color: #fff;
 	margin-right: 20px;
 }
 /*Animation for service list*/
