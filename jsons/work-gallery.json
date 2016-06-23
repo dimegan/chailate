@@ -1,65 +1,59 @@
 [
 	{
 		"imgid" : 1,
-		"title": "clase-brake",
-		"imageUrl": "img/work/breake.jpg",
-		"details" : "Imagen diseñada para publicidad de la academia Tutu",
-		"serviceType" : 1
-	},
-	{
-		"imgid" : 2,
-		"title": "clase-ballete",
-		"imageUrl": "img/work/tutu-ofertas.jpg",
-		"details" : "Imagen diseñada para publicidad de la academia Tutu",
+		"title": "diseño-breake",
+		"imageUrl": "img/home-work/diseño-breake.jpg",
+		"details" : "Diseño de publicidad para academia Tutu",
 		"serviceType" : 1
 	},
 	{
 		"imgid" : 5,
-		"title": "clase-acondicionamiento",
-		"imageUrl": "img/work/acondicionamiento.jpg",
-		"details" : "Imagen diseñada para publicidad de la academia Tutu",
+		"title": "diseño-inscripción",
+		"imageUrl": "img/home-work/diseño-inscripción.jpg",
+		"details" : "Diseño de publicidad para academia Tutu",
+		"serviceType" : 1
+	},
+	{
+		"imgid" : 2,
+		"title": "diseño-invitación",
+		"imageUrl": "img/home-work/diseño-invitación.jpg",
+		"details" : "Diseño de invitaciones para bautiso Gael",
 		"serviceType" : 1
 	},
 	{
 		"imgid" : 6,
-		"title": "banda-corvett",
-		"imageUrl": "img/work/corvett.jpg",
-		"details" : "Imagen diseñada para publicidad de la academia Tutu",
-		"serviceType" : 4
+		"title": "foto-bebe",
+		"imageUrl": "img/home-work/foto-bebe.jpg",
+		"details" : "Mi primer sesión de fotos con Majito",
+		"serviceType" : 3
 	},
 	{
 		"imgid" : 7,
-		"title": "foto-navix",
-		"imageUrl": "img/work/foto-navix.jpg",
-		"details" : "Imagen diseñada para publicidad de la academia Tutu",
-		"serviceType" : 4
+		"title": "foto-boda",
+		"imageUrl": "img/home-work/foto-boda.jpg",
+		"details" : "Sesión de fotos en boda de Mitzi y Ricardo",
+		"serviceType" : 3
 	},
 	{
 		"imgid" : 8,
-		"title": "los-corvett",
-		"imageUrl": "img/work/foto-corvett.jpg",
-		"details" : "Imagen diseñada para publicidad de la academia Tutu",
-		"serviceType" : 4
-	},
-	{
-		"imgid" : 9,
-		"title": "sitio-quehay",
-		"imageUrl": "img/work/quehay-site.jpg",
-		"details" : "Desarrollo de sitio web para la revista xilo",
+		"title": "foto-cumpleanos",
+		"imageUrl": "img/home-work/foto-cumpleanos.jpg",
+		"details" : "Sesión de fotos en fiesta de compleaños Beky",
 		"serviceType" : 3
 	},
 	{
 		"imgid" : 10,
-		"title": "sitio-fotos",
-		"imageUrl": "img/work/photo-site.jpg",
+		"title": "web-cafeteria",
+		"imageUrl": "img/home-work/web-cafeteria.jpg",
 		"details" : "Desarrollo de sitio web para la revista xilo",
-		"serviceType" : 3
+		"serviceType" : 4
 	},
 	{
-		"imgid" : 11,
-		"title": "sitio-revista-xilo",
-		"imageUrl": "img/work/revista-xilo.jpg",
+		"imgid" : 9,
+		"title": "web-blog",
+		"imageUrl": "img/home-work/web-blog.jpg",
 		"details" : "Desarrollo de sitio web para la revista xilo",
-		"serviceType" : 3
+		"serviceType" : 4
 	}
+	
 ]

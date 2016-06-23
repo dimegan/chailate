@@ -1,74 +1,62 @@
 [
 	{
+		"photoId" : 10,
+		"title": "foto-navix",
+		"imageUrl": "img/portafolio/fotografia/foto-navix.jpg",
+		"isVisible" : false
+	},
+	{
 		"photoId" : 1,
-		"title": "New Foto de Maria y Edith para la revista Xilo 1",
-		"imageUrl": "img/details/photos/trece.jpg",
+		"title": "foto-aniversario-dos",
+		"imageUrl": "img/portafolio/fotografia/foto-aniversario-dos.jpg",
 		"isVisible" : false
 	},
 	{
 		"photoId" : 2,
-		"title": "New Foto de Maria y Edith para la revista Xilo 2",
-		"imageUrl": "img/details/photos/uno.jpg",
+		"title": "foto-aniversario-uno",
+		"imageUrl": "img/portafolio/fotografia/foto-aniversario-uno.jpg",
 		"isVisible" : false
 	},
 	{
 		"photoId" : 3,
-		"title": "New Foto de Maria y Edith para la revista Xilo 3",
-		"imageUrl": "img/details/photos/tres.jpg",
+		"title": "foto-boda",
+		"imageUrl": "img/portafolio/fotografia/foto-boda.jpg",
 		"isVisible" : false
 	},
 	{
 		"photoId" : 4,
-		"title": "New Foto de Maria y Edith para la revista Xilo 4",
-		"imageUrl": "img/details/photos/siete.jpg",
+		"title": "foto-cumple-beky",
+		"imageUrl": "img/portafolio/fotografia/foto-cumple-beky.jpg",
 		"isVisible" : false
 	},
 	{
 		"photoId" : 5,
-		"title": "foto1",
-		"imageUrl": "img/details/photos/dos.jpg",
+		"title": "foto-gael-dos",
+		"imageUrl": "img/portafolio/fotografia/foto-gael-dos.jpg",
 		"isVisible" : false
 	},
 	{
 		"photoId" : 6,
-		"title": "foto2",
-		"imageUrl": "img/details/photos/once.jpg",
+		"title": "foto-gael-uno",
+		"imageUrl": "img/portafolio/fotografia/foto-gael-uno.jpg",
 		"isVisible" : false
 	},
 	{
 		"photoId" : 7,
-		"title": "foto1",
-		"imageUrl": "img/details/photos/ocho.jpg",
+		"title": "foto-majito-dos",
+		"imageUrl": "img/portafolio/fotografia/foto-majito-dos.jpg",
 		"isVisible" : false
 	},
 	{
 		"photoId" : 8,
-		"title": "foto2",
-		"imageUrl": "img/details/photos/nueve.jpg",
+		"title": "foto-majito-tre",
+		"imageUrl": "img/portafolio/fotografia/foto-majito-tre.jpg",
 		"isVisible" : false
 	},
 	{
 		"photoId" : 9,
-		"title": "foto2",
-		"imageUrl": "img/details/photos/diez.jpg",
-		"isVisible" : false
-	},
-	{
-		"photoId" : 10,
-		"title": "foto1",
-		"imageUrl": "img/details/photos/cuatro.jpg",
-		"isVisible" : false
-	},
-	{
-		"photoId" : 11,
-		"title": "foto2",
-		"imageUrl": "img/details/photos/cinco.jpg",
-		"isVisible" : false
-	},
-	{
-		"photoId" : 12,
-		"title": "foto2",
-		"imageUrl": "img/details/photos/tres.jpg",
+		"title": "foto-majito-uno",
+		"imageUrl": "img/portafolio/fotografia/foto-majito-uno.jpg",
 		"isVisible" : false
 	}
 ]
