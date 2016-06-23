@@ -2,21 +2,21 @@
 	{
 		"imgid" : 1,
 		"title": "diseño-breake",
-		"imageUrl": "img/home-work/diseño-breake.jpg",
+		"imageUrl": "img/home-work/diseno-breake.jpg",
 		"details" : "Diseño de publicidad para academia Tutu",
 		"serviceType" : 1
 	},
 	{
 		"imgid" : 5,
 		"title": "diseño-inscripción",
-		"imageUrl": "img/home-work/diseño-inscripción.jpg",
+		"imageUrl": "img/home-work/diseno-inscripción.jpg",
 		"details" : "Diseño de publicidad para academia Tutu",
 		"serviceType" : 1
 	},
 	{
 		"imgid" : 2,
 		"title": "diseño-invitación",
-		"imageUrl": "img/home-work/diseño-invitación.jpg",
+		"imageUrl": "img/home-work/diseno-invitación.jpg",
 		"details" : "Diseño de invitaciones para bautiso Gael",
 		"serviceType" : 1
 	},
