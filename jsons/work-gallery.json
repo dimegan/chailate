@@ -9,14 +9,14 @@
 	{
 		"imgid" : 5,
 		"title": "diseño-inscripción",
-		"imageUrl": "img/home-work/diseno-inscripción.jpg",
+		"imageUrl": "img/home-work/diseno-inscripcion.jpg",
 		"details" : "Diseño de publicidad para academia Tutu",
 		"serviceType" : 1
 	},
 	{
 		"imgid" : 2,
 		"title": "diseño-invitación",
-		"imageUrl": "img/home-work/diseno-invitación.jpg",
+		"imageUrl": "img/home-work/diseno-invitacion.jpg",
 		"details" : "Diseño de invitaciones para bautiso Gael",
 		"serviceType" : 1
 	},
