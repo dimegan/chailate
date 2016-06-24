@@ -269,12 +269,18 @@ a.coco-color:hover, input.coco-color:hover{
 	background: url(../img/portafolio/fotografia/back-fotografia.jpg) repeat center top;	
 }
 .disenio-back{
-	background: url(../img/details/photos/alebrijes.jpg) repeat center top;	
+	background: url(../img/portafolio/disenio/back-disenio.jpg) repeat center 25%;	
+}
+.web-back{
+	background: url(../img/portafolio/web/web-back-final.jpeg) repeat center center;
+}
+.mkt-back{
+	background: url(../img/portafolio/mkt/mkt-back.jpg) repeat center top;
 }
 
 /*image gallery*/
 .modal-dialog.gallery-modal{
-	max-width: 650px;
+	/*max-width: 650px;*/
 }
 .animate-enter {
 	-webkit-transition: 5s linear all; /* Chrome */

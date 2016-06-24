@@ -5,7 +5,7 @@
 
 	function PhotoCtrl(dataservice){
 		var ctrl = this;
-		ctrl.portfolio = 'design';
+		ctrl.portfolio = 'photos';
 		activate();
 
 		function activate(){

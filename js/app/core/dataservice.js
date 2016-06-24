@@ -36,6 +36,9 @@
 			var serviceUrl = '';
 			switch(type){
 				case 'design':
+					serviceUrl = 'jsons/portfolio-diseno.json';
+					break;
+				case 'photos':
 					serviceUrl = 'jsons/portfolio-photos.json';
 					break;
 				case 'webdev':

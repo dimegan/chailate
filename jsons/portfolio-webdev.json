@@ -1,50 +1,14 @@
 [
 	{
-		"photoId" : 9,
-		"title": "foto2",
-		"imageUrl": "img/details/photos/diez.jpg",
-		"isVisible" : false
-	},
-	{
 		"photoId" : 10,
-		"title": "foto1",
-		"imageUrl": "img/details/photos/cuatro.jpg",
-		"isVisible" : false
-	},
-	{
-		"photoId" : 11,
-		"title": "foto2",
-		"imageUrl": "img/details/photos/cinco.jpg",
-		"isVisible" : false
-	},
-	{
-		"photoId" : 12,
-		"title": "foto2",
-		"imageUrl": "img/details/photos/tres.jpg",
+		"title": "web-blog",
+		"imageUrl": "img/portafolio/web/web-blog.jpg",
 		"isVisible" : false
 	},
 	{
 		"photoId" : 1,
-		"title": "New Foto de Maria y Edith para la revista Xilo 1",
-		"imageUrl": "img/details/photos/trece.jpg",
-		"isVisible" : false
-	},
-	{
-		"photoId" : 2,
-		"title": "New Foto de Maria y Edith para la revista Xilo 2",
-		"imageUrl": "img/details/photos/uno.jpg",
-		"isVisible" : false
-	},
-	{
-		"photoId" : 3,
-		"title": "New Foto de Maria y Edith para la revista Xilo 3",
-		"imageUrl": "img/details/photos/tres.jpg",
-		"isVisible" : false
-	},
-	{
-		"photoId" : 4,
-		"title": "New Foto de Maria y Edith para la revista Xilo 4",
-		"imageUrl": "img/details/photos/siete.jpg",
+		"title": "web-cafeteria",
+		"imageUrl": "img/portafolio/web/web-cafeteria.jpg",
 		"isVisible" : false
 	}
 ]
