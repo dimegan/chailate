@@ -3,7 +3,7 @@
 
 	angular.module('chaiApp.widgets').controller('ImgGalleryCtrl', ImgGalleryCtrl);
 
-	function ImgGalleryCtrl($scope, dataservice, $timeout, $window){
+	function ImgGalleryCtrl($scope, dataservice, $timeout, $window, $location){
 		var vm = this;
         vm.portafolio = [];
         vm.showModal = showModal;
@@ -72,6 +72,13 @@
 			$event.preventDefault();
 			vm.selectedPhoto = photo;
 			$('#imgModal').modal({});
+			//Tracking google analytics event
+			$window.ga('send', {
+			  hitType: 'event',
+			  eventCategory: 'show-image',
+			  eventAction: 'click',
+			  eventLabel: photo.title
+			});
 		}
 	}
 
