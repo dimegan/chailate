@@ -4,13 +4,20 @@
 	angular.module('chaiApp.home').controller('HomeCtrl', HomeCtrl);
 
 	/**@ngInject*/
-	function HomeCtrl(dataservice, $routeParams){
-		var ctrl = this;
-		this.showServDet = showServDet;
-		this.hideServDet = hideServDet;
-		this.selectedWork = selectedWork;
-		this.unselectedWork = unselectedWork;
+	function HomeCtrl(dataservice, $routeParams, $http){
+		var homeCtrl = this;
+		homeCtrl.showServDet = showServDet;
+		homeCtrl.hideServDet = hideServDet;
+		homeCtrl.selectedWork = selectedWork;
+		homeCtrl.unselectedWork = unselectedWork;
+		homeCtrl.sendComments = sendComments;
 		activate();
+
+		homeCtrl.contact ={
+			name:'',
+			email:'',
+			message:''
+		}
 
 		function activate(){
 			getWorkGallery().then( function() {
@@ -40,7 +47,7 @@
 		function getWorkGallery(){
 			return dataservice.getWorkGallery().
 				then(function(data) {
-					ctrl.workImages = data;
+					homeCtrl.workImages = data;
 					return data;
 				});
 		}
@@ -103,6 +110,30 @@
 			}
 
 			return imgServ;
+		}
+
+		function sendComments(){
+
+			$http({
+			  method: 'POST',
+			  url: 'http://104.131.137.249/sendmail/',
+			  data: {
+				    subject: "Mail de contacto",
+				    nameFrom: "Agencia chailate",
+				    mailTo: "dimegan@gmail.com",
+				    nameTo: "Soporte chailate",
+				    contactName: homeCtrl.contact.name,
+				    contactMessage: homeCtrl.contact.message,
+				    contactEmail: homeCtrl.contact.email
+				}
+			}).then(function successCallback(response) {
+			    console.log(response);
+			    homeCtrl.contact.name = '';
+			    homeCtrl.contact.message = '';
+			    homeCtrl.contact.email = '';
+			  }, function errorCallback(response) {
+			    console.log(response);
+			  });
 		}
 	}
 })();

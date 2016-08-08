@@ -96,15 +96,15 @@
           </p>
           <p class="contact-phone">
             <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>55 73 29 32 54
-          </p>
+          </p> 
         </div>
       </div>
       <div class="col-md-6">
-        <form action="#" method="post" class="text-left">
-          <input type="text" class="form-control" placeholder="Nombre">
-          <input type="text" class="form-control" placeholder="Email">
-          <textarea class="form-control" rows="3" placeholder="Mensaje"></textarea>
-          <input type="submite" value="Enviar" class="btn btn-primary btn-lg coco-color">
+        <form class="text-left" ng-submit="homeCtrl.sendComments();">
+          <input ng-model="homeCtrl.contact.name" type="text" class="form-control" placeholder="Nombre">
+          <input ng-model="homeCtrl.contact.email" type="text" class="form-control" placeholder="Email">
+          <textarea ng-model="homeCtrl.contact.message" class="form-control" rows="3" placeholder="Mensaje"></textarea>
+          <input type="submit" id="submit" value="Submit" class="btn btn-primary btn-lg coco-color">
         </form>
       </div>
     </div>
