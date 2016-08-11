@@ -11,6 +11,8 @@
 		homeCtrl.selectedWork = selectedWork;
 		homeCtrl.unselectedWork = unselectedWork;
 		homeCtrl.sendComments = sendComments;
+		homeCtrl.showContactForm = showContactForm;
+		homeCtrl.showContact = true;
 		activate();
 
 		homeCtrl.contact ={
@@ -113,27 +115,20 @@
 		}
 
 		function sendComments(){
+			homeCtrl.showContact = false;
+			//Send email with contact message
+			dataservice.sendComments(homeCtrl.contact).
+				then(function(data) {
+					console.log(data);
+				    homeCtrl.contact.name = '';
+				    homeCtrl.contact.message = '';
+				    homeCtrl.contact.email = '';
+					return data;
+				});
+		}
 
-			$http({
-			  method: 'POST',
-			  url: 'http://104.131.137.249/sendmail/',
-			  data: {
-				    subject: "Mail de contacto",
-				    nameFrom: "Agencia chailate",
-				    mailTo: "dimegan@gmail.com",
-				    nameTo: "Soporte chailate",
-				    contactName: homeCtrl.contact.name,
-				    contactMessage: homeCtrl.contact.message,
-				    contactEmail: homeCtrl.contact.email
-				}
-			}).then(function successCallback(response) {
-			    console.log(response);
-			    homeCtrl.contact.name = '';
-			    homeCtrl.contact.message = '';
-			    homeCtrl.contact.email = '';
-			  }, function errorCallback(response) {
-			    console.log(response);
-			  });
+		function showContactForm(){
+			homeCtrl.showContact = true;
 		}
 	}
 })();

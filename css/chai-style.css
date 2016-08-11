@@ -3,6 +3,10 @@ header{
 	width: 100%;
 	z-index: 1;
 }
+/*helpers*/
+.hide-item{
+	display: none;
+}
 /*Menu*/
 .navbar-brand{
 	font-size: 20px;
@@ -173,6 +177,10 @@ a.coco-color:hover, input.coco-color:hover{
 .contact{
 	background-color: #B15983;
 	color: #fff;
+}
+.contact a{
+	color: white;
+    text-decoration: underline;
 }
 .contact h2{
 	margin-bottom: 

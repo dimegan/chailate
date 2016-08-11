@@ -1,12 +1,16 @@
 (function () {
 	'use strict';
 
+	
 	angular.module('chaiApp.core').factory('dataservice', dataservice);
 
-	function dataservice($http){
+	dataservice.$inject = ['$http','appConfig'];
+
+	function dataservice($http, appConfig){
 		var service = {
 			getWorkGallery : getWorkGallery,
-			getPortfolio : getPortfolio
+			getPortfolio : getPortfolio,
+			sendComments : sendComments
 		};
 
 		return service;
@@ -46,6 +50,25 @@
 					break;
 			}
 			return serviceUrl;
+		}
+
+		function sendComments(contact){
+			return $http.post(
+			  appConfig.apiBaseUrl+'sendmail/',
+			  {
+				    subject: "Mail de contacto",
+				    nameFrom: "Agencia chailate",
+				    mailTo: "chailateagencia@gmail.com",
+				    nameTo: "Soporte chailate",
+				    contactName: contact.name,
+				    contactMessage: contact.message,
+				    contactEmail: contact.email
+				}
+			).then(function successCallback(response) {
+			    return response;
+			  }, function errorCallback(response) {
+			    return response;
+			  });
 		}
 	}
 })();

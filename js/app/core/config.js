@@ -3,7 +3,10 @@
 
 	var core = angular.module('chaiApp.core');
 
-	//core.value('config', config);
+    core.constant('appConfig', 
+    {
+        apiBaseUrl: 'http://104.131.137.249/',
+    });
 
     core.config(configure);
 

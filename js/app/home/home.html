@@ -100,12 +100,18 @@
         </div>
       </div>
       <div class="col-md-6">
-        <form class="text-left" ng-submit="homeCtrl.sendComments();">
+        <form id="contact-form" class="text-left animated fadeInDown" ng-submit="homeCtrl.sendComments();" ng-show="homeCtrl.showContact">
           <input ng-model="homeCtrl.contact.name" type="text" class="form-control" placeholder="Nombre">
           <input ng-model="homeCtrl.contact.email" type="text" class="form-control" placeholder="Email">
           <textarea ng-model="homeCtrl.contact.message" class="form-control" rows="3" placeholder="Mensaje"></textarea>
           <input type="submit" id="submit" value="Submit" class="btn btn-primary btn-lg coco-color">
         </form>
+        <div id="contact-message" class="animated fadeInDown" ng-hide="homeCtrl.showContact">
+          <h4>Gracias por enviarnos tus comentarios. <br/>
+          Muy pronto nos pondremos en contacto contigo. <br/>
+          Saludos!</h4>
+          <a href ng-click="homeCtrl.showContactForm();"> Escribir otro comentario </a>
+        </div>
       </div>
     </div>
   </div>
