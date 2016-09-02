@@ -16,7 +16,7 @@ header{
 	color: #fff;	
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-brand:hover{
-	color: #000;
+	color: #fff;
 }
 .navbar{
 	margin-bottom: 0;
@@ -213,6 +213,19 @@ a.coco-color:hover, input.coco-color:hover{
 		font-size: 20px;
 	}
 
+}
+.social-links a{
+	text-decoration: none;
+	margin-right: 10px;
+}
+.social-links .tw-link:hover{
+	color: #1DA1F2;
+}
+.social-links .fb-link:hover{
+	color: #3B5998;
+}
+.social-links .ins-link:hover{
+	color: #7F44B5;
 }
 .logo-footer{
 	margin: 14px 20px;
