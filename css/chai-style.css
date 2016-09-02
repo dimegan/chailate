@@ -113,6 +113,7 @@ a.coco-color:hover, input.coco-color:hover{
 .coco-summary h2{
 	margin-bottom: 50px;	
 }
+/*Services in home*/
 .feature-design{
 	background-color: #D896A0;
 }
@@ -134,6 +135,13 @@ a.coco-color:hover, input.coco-color:hover{
 	font-size: 30px;
 }
 .coco-service a{
+	color: #fff;
+}
+.link-show-more{
+	text-decoration: underline;
+	color: #000;
+}
+.link-show-more:hover{
 	color: #fff;
 }
 /*helper*/

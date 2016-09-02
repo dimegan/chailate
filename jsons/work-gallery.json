@@ -45,14 +45,14 @@
 		"imgid" : 10,
 		"title": "web-cafeteria",
 		"imageUrl": "img/home-work/web-cafeteria.jpg",
-		"details" : "Desarrollo de sitio web para la revista xilo",
+		"details" : "Desarrollo de sitio web para cafeteria",
 		"serviceType" : 4
 	},
 	{
 		"imgid" : 9,
 		"title": "web-blog",
 		"imageUrl": "img/home-work/web-blog.jpg",
-		"details" : "Desarrollo de sitio web para la revista xilo",
+		"details" : "Desarrollo de blog para estrategias docentes",
 		"serviceType" : 4
 	}
 	
