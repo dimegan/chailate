@@ -4,7 +4,7 @@
 	angular.module('chaiApp.design').controller('DesignCtrl', DesignCtrl);
 
 	/**@ngInject*/
-	function DesignCtrl(dataservice, $location, $window){
+	function DesignCtrl(dataservice, analyticsservice){
 		
 		var ctrl = this;
 		ctrl.portfolio = 'design';
@@ -12,7 +12,7 @@
 
 		function activate(){
 			//Tracking google analytics view
-			$window.ga('send', 'pageview', {page: $location.url()});
+			analyticsservice.trackPageView();
 		}
 	}
 })();

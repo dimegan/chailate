@@ -140,6 +140,7 @@ a.coco-color:hover, input.coco-color:hover{
 .link-show-more{
 	text-decoration: underline;
 	color: #000;
+	padding-top: 20px;
 }
 .link-show-more:hover{
 	color: #fff;
