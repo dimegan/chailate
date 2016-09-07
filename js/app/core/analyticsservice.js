@@ -13,7 +13,7 @@
 		return service;
 
 		function trackPageView(){
-			$window.ga('send', 'pageview', { page: $location.url() });
+			//$window.ga('send', 'pageview', { page: $location.url() });
 		}
 	}
 })();
