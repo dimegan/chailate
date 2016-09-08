@@ -13,7 +13,11 @@
 		return service;
 
 		function trackPageView(){
-			//$window.ga('send', 'pageview', { page: $location.url() });
+			if($window.ga){
+				$window.ga('send', 'pageview', { page: $location.url() });
+			}else{
+				console.log('Google analytics is off');
+			}
 		}
 	}
 })();

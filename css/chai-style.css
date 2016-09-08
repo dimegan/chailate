@@ -137,23 +137,25 @@ a.coco-color:hover, input.coco-color:hover{
 	background-color: #9AD6D4;
 }
 .inner-feature{
-	padding: 60px 10px 70px;	
+	padding: 60px 10px 60px;
 }
 .inner-feature h3{
 	min-height: 66px;
 	margin-top: 30px;
 	font-size: 30px;
 }
+.inner-feature .service-icon{
+	color: #C6C6C6;
+}
 .coco-service a{
 	color: #fff;
 }
 .link-show-more{
-	text-decoration: underline;
-	color: #000;
-	padding-top: 20px;
+	padding: 7px;
+    border: 2px solid #fff;
 }
 .link-show-more:hover{
-	color: #fff;
+	border-style: dotted;
 }
 /*helper*/
 .coco-transition{
@@ -262,7 +264,7 @@ a.coco-color:hover, input.coco-color:hover{
 .coco-service{
 	transition: all 0.6s ease;
 	-webkit-transition: all 0.6s ease; /* Chrome */
-	min-height: 330px;
+	min-height: 350px;
 }
 .coco-service p{
 	/*Hide service details*/
@@ -275,7 +277,7 @@ a.coco-color:hover, input.coco-color:hover{
 .coco-service:hover h3{
 	margin-top: 0;
 }
-.coco-service:hover img{
+.coco-service:hover .icon-to-hide{
 	display: none;
 }
 .coco-service:hover p{
