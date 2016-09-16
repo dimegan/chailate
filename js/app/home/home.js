@@ -129,7 +129,6 @@
 				//Send email with contact message
 				dataservice.sendComments(homeCtrl.contact).
 					then(function(data) {
-						console.log(data);
 					    homeCtrl.contact.name = '';
 					    homeCtrl.contact.message = '';
 					    homeCtrl.contact.email = '';
@@ -151,10 +150,12 @@
 				if(!validateEmail(contactEmail)){
 					homeCtrl.contactError.message = 'Ingresa un email valido para poder enviar tu comentario';
 				}else{
+					//Si no hubo errores ocultamos la caja de errores
 					homeCtrl.contactError.show = false;
 					return true;	
 				}
 			}
+			//Si hubo errores mostramos la caja de errores
 			homeCtrl.contactError.show = true;
 			return false;
 		}

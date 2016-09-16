@@ -360,4 +360,20 @@ a.coco-color:hover, input.coco-color:hover{
   to {
     -webkit-filter: hue-rotate(-360deg);
   }
+}/*web detail*/
+.detail-container{
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+.web-image-preview{
+	margin-top: 20px;
+}
+.web-image-full{
+	margin: 20px;
+}
+.web-description{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 20px 40px 40px 0px;
 }
