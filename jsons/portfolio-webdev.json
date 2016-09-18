@@ -1,14 +1,20 @@
 [
 	{
-		"photoId" : 10,
-		"title": "web-blog",
+		"id" : 1,
+		"title": "Blog Estrategias Docentes",
 		"imageUrl": "img/portafolio/web/web-blog.jpg",
-		"isVisible" : false
+		"isVisible" : false,
+		"screenshot": "img/portafolio/web/web-blog.jpg",
+		"url": "http://google.com",
+		"summary": "<p>Known around the bike world - Dom Mason wanted to create the most beautiful, engineered frame and bike components with his new venture.</p><p>We worked with Dom from the early stages of the company to put together an immersive site that showcases beautiful photography and the attention to detail that comes out in each product.</p><p>Built using Spree Commerce the site tracks stock and bike builds - letting Mason Cycles concentrate on new products rather than administration - naturally the site is also fully responsive.</p>"
 	},
 	{
-		"photoId" : 1,
-		"title": "web-cafeteria",
+		"id" : 2,
+		"title": "Blog Cafeteria Lorem",
 		"imageUrl": "img/portafolio/web/web-cafeteria.jpg",
-		"isVisible" : false
+		"isVisible" : false,
+		"screenshot": "img/portafolio/web/cafeteria-blog-full.jpg",
+		"url": "http://google.com",
+		"summary": "resumen"
 	}
 ]

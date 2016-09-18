@@ -18,7 +18,6 @@
         }
 
         function getPortfolio(portfoliotype){
-        	console.log(portfoliotype);
 			return dataservice.getPortfolio(portfoliotype).
 				then(function(data) {
 					vm.portafolio = data;

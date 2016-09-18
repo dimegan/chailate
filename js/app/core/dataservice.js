@@ -10,7 +10,8 @@
 		var service = {
 			getWorkGallery : getWorkGallery,
 			getPortfolio : getPortfolio,
-			sendComments : sendComments
+			sendComments : sendComments,
+			getWebDetails : getWebDetails
 		};
 
 		return service;
@@ -36,20 +37,22 @@
 			}
 		}
 
-		function getPortfolioService(type){
-			var serviceUrl = '';
-			switch(type){
-				case 'design':
-					serviceUrl = 'jsons/portfolio-diseno.json';
-					break;
-				case 'photos':
-					serviceUrl = 'jsons/portfolio-photos.json';
-					break;
-				case 'webdev':
-					serviceUrl = 'jsons/portfolio-webdev.json';
-					break;
+		function getWebDetails(id){
+			return $http.get('jsons/portfolio-webdev.json').then(getSelectedItem).catch(function (message){
+				console.log('Error in getSelectedItem. Message:' + message);
+			});
+
+			function getSelectedItem(result, status, headers, config){
+				var selected = {};
+				var items = result.data;
+				for(var i = 0; i < items.length; i++){
+					console.log(items[i].id);
+					if(items[i].id == id){
+						selected = items[i];
+					}
+				}
+				return selected;
 			}
-			return serviceUrl;
 		}
 
 		function sendComments(contact){
@@ -69,6 +72,23 @@
 			  }, function errorCallback(response) {
 			    return response;
 			  });
+		}
+
+		/*Helpers*/
+		function getPortfolioService(type){
+			var serviceUrl = '';
+			switch(type){
+				case 'design':
+					serviceUrl = 'jsons/portfolio-diseno.json';
+					break;
+				case 'photos':
+					serviceUrl = 'jsons/portfolio-photos.json';
+					break;
+				case 'webdev':
+					serviceUrl = 'jsons/portfolio-webdev.json';
+					break;
+			}
+			return serviceUrl;
 		}
 	}
 })();
