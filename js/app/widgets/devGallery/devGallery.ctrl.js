@@ -20,12 +20,59 @@
         function getPortfolio(portfoliotype){
 			return dataservice.getPortfolio(portfoliotype).
 				then(function(data) {
+					setupItems(data);
 					vm.portafolio = data;
 					return data;
 				});
 		}
 
-        //Hace visible una foto cada 400 ms
+        
+
+		function bindScrollEvent(){
+			//innerHeight = view port size
+        	//body.offsetHeight = html document size
+        	if($window.innerHeight >document.body.offsetHeight){
+        		//When viw port is bigger to document height after page is load
+        		//must trigger display images animation
+        		hideImages();
+        		showImages(0);
+        	}else{
+        		//When view port is smaller to document height star the animation 
+        		//when user scroll to the bottom of the page
+        		var isActiveAnimation = false;
+        		var portafolioWrapper = $(document.getElementById("photos-portfolio"));
+        		var pixForStart = 100;
+				angular.element($window).bind("scroll", function() {
+		             
+		             // Obtenemos la posicion del scroll en pantalla
+	            	if (!isActiveAnimation && ($window.innerHeight + window.scrollY) >= 
+	            		(portafolioWrapper.offset().top + pixForStart)) {
+	            		isActiveAnimation = true;
+	            		//Oculta todas las imagenes y despues las hacemos visibles 
+	            		//cuando el usuario llega al final de la página
+	            		hideImages();
+	            		showImages(0);		
+	            	}
+		        });
+			}
+		}
+
+		function showModal($event, photo){
+			vm.selectedPhoto = photo;
+			//TODO: tracking selected item
+		}
+
+		/*helpers*/
+		function setupItems(items){
+			for(var i = 0; i < items.length; i++ ){
+				var title = items[i].title;
+				//add new property linktitle. This does not have whitespaces
+				items[i].linktitle = title.replace(/\s/g, '-');
+			}
+		}
+
+		/*Animation for gallery*/
+		//Hace visible una foto cada 400 ms
 		function showImages(index){
 			var animTime = index > 0 ? 400 : 0;
 			$timeout(
@@ -43,43 +90,10 @@
 			);
 		}
 
-		function bindScrollEvent(){
-			//innerHeight = view port size
-        	//body.offsetHeight = html document size
-        	if($window.innerHeight >document.body.offsetHeight){
-        		//When viw port is bigger to document height after page is load
-        		//must trigger display images animation
-        		showImages(0)
-        	}else{
-        		//When view port is smaller to document height star the animation 
-        		//when user scroll to the bottom of the page
-        		var isActiveAnimation = false;
-				angular.element($window).bind("scroll", function() {
-		             
-		             // Obtenemos la posicion del scroll en pantalla
-	            	var scroll = document.documentElement.scrollTop || document.body.scrollTop;
-	            	if (!isActiveAnimation && ($window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-	            		isActiveAnimation = true;
-	            		//Hacemos visibles las imagenes cuando el usuario llega al final 
-	            		//de la página
-	            		showImages(0)		
-	            	}
-		        });
+		function hideImages(){
+			for(var i = 0; i <  vm.portafolio.length; i++){
+				 vm.portafolio[i].isVisible = false;
 			}
-		}
-
-		function showModal($event, photo){
-			$event.preventDefault();
-			vm.selectedPhoto = photo;
-			console.log(photo);
-			/*$('#imgModal').modal({});
-			//Tracking google analytics event
-			$window.ga('send', {
-			  hitType: 'event',
-			  eventCategory: 'show-image',
-			  eventAction: 'click',
-			  eventLabel: photo.title
-			});*/
 		}
 	}
 

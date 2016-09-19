@@ -25,43 +25,30 @@
 				});
 		}
 
-        //Hace visible una foto cada 400 ms
-		function showImages(index){
-			var animTime = index > 0 ? 400 : 0;
-			$timeout(
-			  function() 
-			  {
-			  	if(index < vm.portafolio.length){
-			  		
-			  		var item = vm.portafolio[index];
-			  		item.isVisible = true;
-			  		item.myClass = 'fadeIn';
-			  		index++;
-					showImages(index);
-				}
-			  }, animTime
-			);
-		}
-
 		function bindScrollEvent(){
 			//innerHeight = view port size
         	//body.offsetHeight = html document size
         	if($window.innerHeight >document.body.offsetHeight){
         		//When viw port is bigger to document height after page is load
         		//must trigger display images animation
-        		showImages(0)
+        		hideImages();
+        		showImages(0);
         	}else{
+
         		//When view port is smaller to document height star the animation 
         		//when user scroll to the bottom of the page
         		var isActiveAnimation = false;
+        		var portafolioWrapper = $(document.getElementById("photos-portfolio"));
+        		var pixForStart = 100;
 				angular.element($window).bind("scroll", function() {
-		             
+		        	
 		             // Obtenemos la posicion del scroll en pantalla
-	            	var scroll = document.documentElement.scrollTop || document.body.scrollTop;
-	            	if (!isActiveAnimation && ($window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+	            	if (!isActiveAnimation && ($window.innerHeight + window.scrollY) >= 
+	            		(portafolioWrapper.offset().top + pixForStart)) {
 	            		isActiveAnimation = true;
 	            		//Hacemos visibles las imagenes cuando el usuario llega al final 
 	            		//de la página
+	            		hideImages();
 	            		showImages(0)		
 	            	}
 		        });
@@ -80,6 +67,32 @@
 			  eventLabel: photo.title
 			});
 		}
+
+		/*Animation for gallery*/
+		//Hace visible una foto cada 400 ms
+		function showImages(index){
+			var animTime = index > 0 ? 400 : 0;
+			$timeout(
+			  function() 
+			  {
+			  	if(index < vm.portafolio.length){
+			  		
+			  		var item = vm.portafolio[index];
+			  		item.isVisible = true;
+			  		item.myClass = 'fadeIn';
+			  		index++;
+					showImages(index);
+				}
+			  }, animTime
+			);
+		}
+
+		function hideImages(){
+			for(var i = 0; i <  vm.portafolio.length; i++){
+				 vm.portafolio[i].isVisible = false;
+			}
+		}
+
 	}
 
 })();

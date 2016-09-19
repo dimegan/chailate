@@ -3,60 +3,60 @@
 		"photoId" : 10,
 		"title": "foto-navix",
 		"imageUrl": "img/portafolio/fotografia/foto-navix.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 1,
 		"title": "foto-aniversario-dos",
 		"imageUrl": "img/portafolio/fotografia/foto-aniversario-dos.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 2,
 		"title": "foto-aniversario-uno",
 		"imageUrl": "img/portafolio/fotografia/foto-aniversario-uno.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 3,
 		"title": "foto-boda",
 		"imageUrl": "img/portafolio/fotografia/foto-boda.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 4,
 		"title": "foto-cumple-beky",
 		"imageUrl": "img/portafolio/fotografia/foto-cumple-beky.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 5,
 		"title": "foto-gael-dos",
 		"imageUrl": "img/portafolio/fotografia/foto-gael-dos.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 6,
 		"title": "foto-gael-uno",
 		"imageUrl": "img/portafolio/fotografia/foto-gael-uno.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 7,
 		"title": "foto-majito-dos",
 		"imageUrl": "img/portafolio/fotografia/foto-majito-dos.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 8,
 		"title": "foto-majito-tre",
 		"imageUrl": "img/portafolio/fotografia/foto-majito-tre.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 9,
 		"title": "foto-majito-uno",
 		"imageUrl": "img/portafolio/fotografia/foto-majito-uno.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	}
 ]

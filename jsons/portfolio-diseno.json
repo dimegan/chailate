@@ -3,60 +3,60 @@
 		"photoId" : 5,
 		"title": "diseno-breake",
 		"imageUrl": "img/portafolio/diseno/diseno-breake.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 5,
 		"title": "diseno-street-dance",
 		"imageUrl": "img/portafolio/diseno/diseno-street-dance.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 5,
 		"title": "diseno-inscripcion",
 		"imageUrl": "img/portafolio/diseno/diseno-inscripcion.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 6,
 		"title": "diseno-heladeria",
 		"imageUrl": "img/portafolio/diseno/diseno-heladeria.JPG",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 10,
 		"title": "diseno-anuncios",
 		"imageUrl": "img/portafolio/diseno/diseno-anuncios.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 4,
 		"title": "diseno-invitacion-boda",
 		"imageUrl": "img/portafolio/diseno/diseno-invitacion-boda.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 1,
 		"title": "diseno-bodeguita",
 		"imageUrl": "img/portafolio/diseno/diseno-bodeguita.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 2,
 		"title": "diseno-desayuno",
 		"imageUrl": "img/portafolio/diseno/diseno-desayuno.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 3,
 		"title": "diseno-invitacion-bautizo",
 		"imageUrl": "img/portafolio/diseno/diseno-bautizo.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	},
 	{
 		"photoId" : 3,
 		"title": "diseno-invitacion-bautizo",
 		"imageUrl": "img/portafolio/diseno/diseno-invitacion-bautizo.jpg",
-		"isVisible" : false
+		"isVisible" : true
 	}	
 ]
