@@ -1,20 +1,56 @@
-[
+[	
 	{
 		"id" : 1,
-		"title": "Blog Estrategias Docentes",
-		"imageUrl": "img/portafolio/web/web-blog.jpg",
+		"title": "Blog Cafeteria Lorem",
+		"imageUrl": "img/portafolio/web/blog-estrategias.jpg",
 		"isVisible" : true,
-		"screenshot": "img/portafolio/web/web-blog.jpg",
+		"screenshot": "img/portafolio/web/blog-estrategias-full.jpg",
 		"url": "http://google.com",
 		"summary": "<p>Known around the bike world - Dom Mason wanted to create the most beautiful, engineered frame and bike components with his new venture.</p><p>We worked with Dom from the early stages of the company to put together an immersive site that showcases beautiful photography and the attention to detail that comes out in each product.</p><p>Built using Spree Commerce the site tracks stock and bike builds - letting Mason Cycles concentrate on new products rather than administration - naturally the site is also fully responsive.</p>"
 	},
 	{
 		"id" : 2,
-		"title": "Blog Cafeteria Lorem",
-		"imageUrl": "img/portafolio/web/web-cafeteria.jpg",
+		"title": "Blog Estrategias Docentes",
+		"imageUrl": "img/portafolio/web/cafeteria-blog.jpg",
 		"isVisible" : true,
 		"screenshot": "img/portafolio/web/cafeteria-blog-full.jpg",
 		"url": "http://google.com",
-		"summary": "<p>Known around the bike world - Dom Mason wanted to create the most beautiful, engineered frame and bike components with his new venture.</p><p>We worked with Dom from the early stages of the company to put together an immersive site that showcases beautiful photography and the attention to detail that comes out in each product.</p><p>Built using Spree Commerce the site tracks stock and bike builds - letting Mason Cycles concentrate on new products rather than administration - naturally the site is also fully responsive.</p>"
+		"summary": "<p>Known around the bike world </p>"
+	},
+	{
+		"id" : 3,
+		"title": "Blog Estrategias Docentes",
+		"imageUrl": "img/portafolio/web/live-once.jpg",
+		"isVisible" : true,
+		"screenshot": "img/portafolio/web/live-once-full.jpg",
+		"url": "http://google.com",
+		"summary": "<p>Known around the bike world </p>"
+	},
+	{
+		"id" : 4,
+		"title": "Blog Estrategias Docentes",
+		"imageUrl": "img/portafolio/web/cafeteria-lorem.jpg",
+		"isVisible" : true,
+		"screenshot": "img/portafolio/web/cafeteria-lorem-full.jpg",
+		"url": "http://google.com",
+		"summary": "<p>Known around the bike world </p>"
+	},
+	{
+		"id" : 5,
+		"title": "Blog Estrategias Docentes",
+		"imageUrl": "img/portafolio/web/tienda-sandade.jpg",
+		"isVisible" : true,
+		"screenshot": "img/portafolio/web/tienda-sandade-full.jpg",
+		"url": "http://google.com",
+		"summary": "<p>Known around the bike world </p>"
+	},
+	{
+		"id" : 6,
+		"title": "Blog Estrategias Docentes",
+		"imageUrl": "img/portafolio/web/blog-chailate.jpg",
+		"isVisible" : true,
+		"screenshot": "img/portafolio/web/blog-chailate-full.jpg",
+		"url": "http://google.com",
+		"summary": "<p>Known around the bike world </p>"
 	}
 ]

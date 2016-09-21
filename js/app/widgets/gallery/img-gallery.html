@@ -3,7 +3,7 @@
         <div class="col-md-12">
 			<div id="photos-portfolio" class="clearfix">
 			  <a href="#" ng-repeat="photo in vm.portafolio">
-			    <img ng-class="photo.myClass" class="gall-image animated"
+			    <img ng-class="photo.myClass" class="img-responsive gall-image animated"
 			      ng-if="photo.isVisible"
 			      ng-click="vm.showModal($event, photo)"
 			      ng-src="{{photo.imageUrl}}"
