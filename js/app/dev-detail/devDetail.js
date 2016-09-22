@@ -22,7 +22,7 @@
 				then(function(data) {
 					ctrl.webdet = data;
 					//solve: attempting to use an unsafe value in a safe context error 
-					ctrl.description = $sce.trustAsHtml(data.summary);
+					ctrl.webdet.description = $sce.trustAsHtml(data.summary);
 					return data;
 				});
 		}

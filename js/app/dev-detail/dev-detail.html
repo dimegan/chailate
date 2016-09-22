@@ -8,8 +8,10 @@
       </div>
       <div class="col-md-4">
         <h1>{{ devCtrl.webdet.title }}</h1>
-        <div class="web-description" ng-bind-html="devCtrl.description">
-          <a href="{{ devCtrl.webdet.url }}" class="btn btn-default">Ver el sitio en vivo</a>
+        <div class="web-description">
+          <div ng-bind-html="devCtrl.webdet.description">
+          </div>
+          <a href="{{ devCtrl.webdet.url }}" class="btn btn-primary">Ver el sitio en vivo</a>
         </div>
         <div>
           <h3>¡Queremos hacer un sitio genial para tí!<h3>

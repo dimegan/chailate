@@ -1,56 +1,65 @@
 [	
 	{
 		"id" : 1,
-		"title": "Blog Cafeteria Lorem",
+		"title": "Blog Estrategias Docentes",
 		"imageUrl": "img/portafolio/web/blog-estrategias.jpg",
 		"isVisible" : true,
 		"screenshot": "img/portafolio/web/blog-estrategias-full.jpg",
-		"url": "http://google.com",
-		"summary": "<p>Known around the bike world - Dom Mason wanted to create the most beautiful, engineered frame and bike components with his new venture.</p><p>We worked with Dom from the early stages of the company to put together an immersive site that showcases beautiful photography and the attention to detail that comes out in each product.</p><p>Built using Spree Commerce the site tracks stock and bike builds - letting Mason Cycles concentrate on new products rather than administration - naturally the site is also fully responsive.</p>"
+		"url": "http://estrategiasdocentes.com/",
+		"summary": "<p>La comunidad de estrategias docentes tiene el objetivo intercambiar saberes, formular preguntas y apoyar el uso de las nuevas tecnologías en la educación.</p><p>El blog fue diseñado con la intención de tener una plataforma a través de la cual, sus editores pudieran publicar artículos educativos que ayuden a los maestro en la formación de sus alumnos.</p><p>Fue construido utilizando Wordpress, Bootrap, Responsive Design y Facebook plugins.</p>"
 	},
 	{
 		"id" : 2,
-		"title": "Blog Estrategias Docentes",
+		"title": "Blog Cafetería Lorem",
 		"imageUrl": "img/portafolio/web/cafeteria-blog.jpg",
 		"isVisible" : true,
 		"screenshot": "img/portafolio/web/cafeteria-blog-full.jpg",
-		"url": "http://google.com",
-		"summary": "<p>Known around the bike world </p>"
+		"url": "",
+		"summary": "<p>El diseño de este sitio fue inspirado en la necesidad actual que tienen las empresas de comida, para estar en constante comunicación con sus clientes.</p><p>Este blog permite publicar recetas de cocina, informacion nutricional, promociones y eventos que se llevarán a cabo en la cafetería.</p><p>Fue construido utilizando Photoshop y HTML5</p>"
 	},
 	{
 		"id" : 3,
-		"title": "Blog Estrategias Docentes",
+		"title": "Live Once",
 		"imageUrl": "img/portafolio/web/live-once.jpg",
 		"isVisible" : true,
 		"screenshot": "img/portafolio/web/live-once-full.jpg",
-		"url": "http://google.com",
-		"summary": "<p>Known around the bike world </p>"
+		"url": "",
+		"summary": "<p>El proyecto Live Once busca crear una plataforma para ayudar a las personas a encontrar casas y departamentos en renta, que se encuentren cercanos.</p><p>El diseño de este sitio fue pensado en mostrarle a los usuarios de forma agíl y sencilla las diferentes opciones que tiene y permitirle filtrar estas bajo diferentes criterios, como son: precio, distancia y número de habitaciones.</p><p>Fue construido utilizando Bootstrap y AngularJS</p>"
 	},
 	{
 		"id" : 4,
-		"title": "Blog Estrategias Docentes",
+		"title": "Cafetería Lorem",
 		"imageUrl": "img/portafolio/web/cafeteria-lorem.jpg",
 		"isVisible" : true,
 		"screenshot": "img/portafolio/web/cafeteria-lorem-full.jpg",
-		"url": "http://google.com",
-		"summary": "<p>Known around the bike world </p>"
+		"url": "http://dannart.github.io/Demo-Cafeteria-Lorem/",
+		"summary": "<p>Este proyecto fue diseñado buscando generar un sentimiento cálido en los visitantes, que los hiciera sentir cómodos y con ánimos de tomar un delicioso café.</p><p>El menú de alimentos ocupa una posición central, permitiendo a los usuarios navegar entre los diferentes platillos y especialidades de la cafetería.</p><p>Fue construido utilizando AngularJS y HTML5</p>"
 	},
 	{
 		"id" : 5,
-		"title": "Blog Estrategias Docentes",
+		"title": "Boutique Sandade",
 		"imageUrl": "img/portafolio/web/tienda-sandade.jpg",
 		"isVisible" : true,
 		"screenshot": "img/portafolio/web/tienda-sandade-full.jpg",
-		"url": "http://google.com",
-		"summary": "<p>Known around the bike world </p>"
+		"url": "http://dannart.github.io/Tienda-de-Ropa/",
+		"summary": "<p>El diseño de este proyecto toma como elemento central el catálogo de artículos con que cuenta la boutique, permitiendo a los visitantes conocer los precios y tallas disponibles.</p><p>Una característica importante es la sección de categorías en tendencia, la cual permite a los usuarios conocer la nueva línea de ropa o accesorios y los productos que están en oferta.</p><p>Fue construido utilizando Photoshop y Bootstrap</p>"
 	},
 	{
 		"id" : 6,
-		"title": "Blog Estrategias Docentes",
+		"title": "Blog Chailate",
 		"imageUrl": "img/portafolio/web/blog-chailate.jpg",
 		"isVisible" : true,
 		"screenshot": "img/portafolio/web/blog-chailate-full.jpg",
-		"url": "http://google.com",
-		"summary": "<p>Known around the bike world </p>"
+		"url": "http://chailate.com/blog/",
+		"summary": "<p>En la agencia consideramos importante estar en constante comunicación con nuestros visitantes y con este propósito diseñamos nuestro blog. En esta plataforma nos interesa escribir sobre los temas que más nos apasionan como son: tecnología, diseño y fotografía entre otros.</p><p>También esta plataforma nos permitirá contarles sobre los proyectos en los que actualmente trabajamos y las herramientas que utilizamos en nuestro día a día.</p><p>Fue construido utilizando Wordpress, Bootrap y Facebook plugins</p>"
+	},
+	{
+		"id" : 7,
+		"title": "Periódico Que Hay En Jilotepec",
+		"imageUrl": "img/portafolio/web/periodico-quehay.jpg",
+		"isVisible" : true,
+		"screenshot": "img/portafolio/web/periodico-quehay-full.jpg",
+		"url": "http://chailate.com/blog/",
+		"summary": "<p>En la agencia consideramos importante estar en constante comunicación con nuestros visitantes y con este propósito diseñamos nuestro blog. En esta plataforma nos interesa escribir sobre los temas que más nos apasionan como son: tecnología, diseño y fotografía entre otros.</p><p>También esta plataforma nos permitirá contarles sobre los proyectos en los que actualmente trabajamos y las herramientas que utilizamos en nuestro día a día.</p><p>Fue construido utilizando Wordpress, Bootrap, Responsive Design y Facebook plugins</p>"
 	}
 ]
