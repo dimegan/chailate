@@ -67,7 +67,7 @@
 			for(var i = 0; i < items.length; i++ ){
 				var title = items[i].title;
 				//add new property linktitle. This does not have whitespaces
-				items[i].linktitle = title.replace(/\s/g, '-');
+				items[i].linktitle = encodeURI(title.replace(/\s/g, '-'));
 			}
 		}
 

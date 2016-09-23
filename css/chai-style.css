@@ -377,3 +377,6 @@ a.coco-color:hover, input.coco-color:hover{
     line-height: 1.5;
     margin: 20px 40px 40px 0px;
 }
+.web-description a{
+	margin-top: 10px;
+}

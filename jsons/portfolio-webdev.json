@@ -19,21 +19,21 @@
 	},
 	{
 		"id" : 3,
-		"title": "Live Once",
-		"imageUrl": "img/portafolio/web/live-once.jpg",
+		"title": "Blog Chailate",
+		"imageUrl": "img/portafolio/web/blog-chailate.jpg",
 		"isVisible" : true,
-		"screenshot": "img/portafolio/web/live-once-full.jpg",
-		"url": "",
-		"summary": "<p>El proyecto Live Once busca crear una plataforma para ayudar a las personas a encontrar casas y departamentos en renta, que se encuentren cercanos.</p><p>El diseño de este sitio fue pensado en mostrarle a los usuarios de forma agíl y sencilla las diferentes opciones que tiene y permitirle filtrar estas bajo diferentes criterios, como son: precio, distancia y número de habitaciones.</p><p>Fue construido utilizando Bootstrap y AngularJS</p>"
+		"screenshot": "img/portafolio/web/blog-chailate-full.jpg",
+		"url": "http://chailate.com/blog/",
+		"summary": "<p>En la agencia consideramos importante estar en constante comunicación con nuestros visitantes y con este propósito diseñamos nuestro blog. En esta plataforma nos interesa escribir sobre los temas que más nos apasionan como son: tecnología, diseño y fotografía entre otros.</p><p>También esta plataforma nos permitirá contarles sobre los proyectos en los que actualmente trabajamos y las herramientas que utilizamos en nuestro día a día.</p><p>Fue construido utilizando Wordpress, Bootrap y Facebook plugins</p>"
 	},
 	{
 		"id" : 4,
-		"title": "Cafetería Lorem",
-		"imageUrl": "img/portafolio/web/cafeteria-lorem.jpg",
+		"title": "Periódico Que Hay En Jilotepec",
+		"imageUrl": "img/portafolio/web/periodico-quehay.jpg",
 		"isVisible" : true,
-		"screenshot": "img/portafolio/web/cafeteria-lorem-full.jpg",
-		"url": "http://dannart.github.io/Demo-Cafeteria-Lorem/",
-		"summary": "<p>Este proyecto fue diseñado buscando generar un sentimiento cálido en los visitantes, que los hiciera sentir cómodos y con ánimos de tomar un delicioso café.</p><p>El menú de alimentos ocupa una posición central, permitiendo a los usuarios navegar entre los diferentes platillos y especialidades de la cafetería.</p><p>Fue construido utilizando AngularJS y HTML5</p>"
+		"screenshot": "img/portafolio/web/periodico-quehay-full.jpg",
+		"url": "",
+		"summary": "<p>Tuvimos el gran gusto de trabajar con el equipo del Periódico Que Hay En Jilotepec para diseñar la versión digital. El principal objetivo era contar con una plataforma que permitiera publicar las noticias más relevantes en Jilotepec y sus alrededores.</p><p>Su diseño fue inspirado en los colores y estilos de este popular periódico. El proyecto permitió tener un contacto más cercano con los asiduos lectores.</p><p>Fue desarrollado utilizando Wordpress, HTML5, Responsive Design y Facebook plugins.</p>"
 	},
 	{
 		"id" : 5,
@@ -46,20 +46,20 @@
 	},
 	{
 		"id" : 6,
-		"title": "Blog Chailate",
-		"imageUrl": "img/portafolio/web/blog-chailate.jpg",
+		"title": "Live Once",
+		"imageUrl": "img/portafolio/web/live-once.jpg",
 		"isVisible" : true,
-		"screenshot": "img/portafolio/web/blog-chailate-full.jpg",
-		"url": "http://chailate.com/blog/",
-		"summary": "<p>En la agencia consideramos importante estar en constante comunicación con nuestros visitantes y con este propósito diseñamos nuestro blog. En esta plataforma nos interesa escribir sobre los temas que más nos apasionan como son: tecnología, diseño y fotografía entre otros.</p><p>También esta plataforma nos permitirá contarles sobre los proyectos en los que actualmente trabajamos y las herramientas que utilizamos en nuestro día a día.</p><p>Fue construido utilizando Wordpress, Bootrap y Facebook plugins</p>"
+		"screenshot": "img/portafolio/web/live-once-full.jpg",
+		"url": "",
+		"summary": "<p>El proyecto Live Once busca crear una plataforma para ayudar a las personas a encontrar casas y departamentos en renta, que se encuentren cercanos.</p><p>El diseño de este sitio fue pensado en mostrarle a los usuarios de forma agíl y sencilla las diferentes opciones que tiene y permitirle filtrar estas bajo diferentes criterios, como son: precio, distancia y número de habitaciones.</p><p>Fue construido utilizando Bootstrap y AngularJS</p>"
 	},
 	{
 		"id" : 7,
-		"title": "Periódico Que Hay En Jilotepec",
-		"imageUrl": "img/portafolio/web/periodico-quehay.jpg",
+		"title": "Cafetería Lorem",
+		"imageUrl": "img/portafolio/web/cafeteria-lorem.jpg",
 		"isVisible" : true,
-		"screenshot": "img/portafolio/web/periodico-quehay-full.jpg",
-		"url": "http://chailate.com/blog/",
-		"summary": "<p>En la agencia consideramos importante estar en constante comunicación con nuestros visitantes y con este propósito diseñamos nuestro blog. En esta plataforma nos interesa escribir sobre los temas que más nos apasionan como son: tecnología, diseño y fotografía entre otros.</p><p>También esta plataforma nos permitirá contarles sobre los proyectos en los que actualmente trabajamos y las herramientas que utilizamos en nuestro día a día.</p><p>Fue construido utilizando Wordpress, Bootrap, Responsive Design y Facebook plugins</p>"
-	}
+		"screenshot": "img/portafolio/web/cafeteria-lorem-full.jpg",
+		"url": "http://dannart.github.io/Demo-Cafeteria-Lorem/",
+		"summary": "<p>Este proyecto fue diseñado buscando generar un sentimiento cálido en los visitantes, que los hiciera sentir cómodos y con ánimos de tomar un delicioso café.</p><p>El menú de alimentos ocupa una posición central, permitiendo a los usuarios navegar entre los diferentes platillos y especialidades de la cafetería.</p><p>Fue construido utilizando AngularJS y HTML5</p>"
+	}	
 ]

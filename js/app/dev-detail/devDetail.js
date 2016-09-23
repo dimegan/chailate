@@ -21,6 +21,7 @@
 			return dataservice.getWebDetails($routeParams.detailid).
 				then(function(data) {
 					ctrl.webdet = data;
+					ctrl.webdet.showLink = data.url.length > 0;
 					//solve: attempting to use an unsafe value in a safe context error 
 					ctrl.webdet.description = $sce.trustAsHtml(data.summary);
 					return data;

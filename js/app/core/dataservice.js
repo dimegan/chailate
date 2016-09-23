@@ -46,7 +46,6 @@
 				var selected = {};
 				var items = result.data;
 				for(var i = 0; i < items.length; i++){
-					console.log(items[i].id);
 					if(items[i].id == id){
 						selected = items[i];
 					}
