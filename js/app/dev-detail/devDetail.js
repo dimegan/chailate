@@ -3,6 +3,8 @@
 
 	angular.module('chaiApp.devDetail').controller('DevDetailCtrl', DevDetailCtrl);
 
+	DevDetailCtrl.$inject = ['dataservice', 'analyticsservice', '$routeParams', '$sce'];
+
 	function DevDetailCtrl(dataservice, analyticsservice, $routeParams, $sce){
 		var ctrl = this;
 		ctrl.detail = $routeParams.detail;

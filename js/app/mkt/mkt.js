@@ -3,6 +3,8 @@
 
 	angular.module('chaiApp.mkt').controller('MktCtrl', MktCtrl);
 
+	MktCtrl.$inject = ['dataservice', 'analyticsservice'];
+
 	function MktCtrl(dataservice, analyticsservice){
 		var ctrl = this;
 		ctrl.portfolio = 'design';

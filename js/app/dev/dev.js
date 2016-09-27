@@ -4,6 +4,8 @@
 	angular.module('chaiApp.dev').
 		controller('DevCtrl', DevCtrl);
 
+	DevCtrl.$inject = ['dataservice', 'analyticsservice'];
+
 	function DevCtrl(dataservice, analyticsservice){
 		var ctrl = this;
 		ctrl.portfolio = 'webdev';

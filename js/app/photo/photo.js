@@ -3,6 +3,8 @@
 
 	angular.module('chaiApp.photo').controller('PhotoCtrl', PhotoCtrl);
 
+	PhotoCtrl.$inject = ['dataservice', 'analyticsservice'];
+
 	function PhotoCtrl(dataservice, analyticsservice){
 		var ctrl = this;
 		ctrl.portfolio = 'photos';

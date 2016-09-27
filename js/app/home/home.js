@@ -3,6 +3,8 @@
 
 	angular.module('chaiApp.home').controller('HomeCtrl', HomeCtrl);
 
+	HomeCtrl.$inject = ['dataservice', '$routeParams', '$http'];
+
 	/**@ngInject*/
 	function HomeCtrl(dataservice, $routeParams, $http){
 		var homeCtrl = this;

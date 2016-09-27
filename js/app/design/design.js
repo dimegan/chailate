@@ -3,6 +3,8 @@
 
 	angular.module('chaiApp.design').controller('DesignCtrl', DesignCtrl);
 
+	DesignCtrl.$inject = ['dataservice', 'analyticsservice'];
+
 	/**@ngInject*/
 	function DesignCtrl(dataservice, analyticsservice){
 		

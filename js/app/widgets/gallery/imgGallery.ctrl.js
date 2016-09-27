@@ -3,7 +3,9 @@
 
 	angular.module('chaiApp.widgets').controller('ImgGalleryCtrl', ImgGalleryCtrl);
 
-	function ImgGalleryCtrl($scope, dataservice, $timeout, $window, $location){
+	ImgGalleryCtrl.$inject = ['$scope', 'dataservice', '$timeout', '$window'];
+
+	function ImgGalleryCtrl($scope, dataservice, $timeout, $window){
 		var vm = this;
         vm.portafolio = [];
         vm.showModal = showModal;
