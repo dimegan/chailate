@@ -1,0 +1,8 @@
+<ifModule mod_rewrite.c>
+RewriteEngine On
+
+# allow social media crawlers to work by redirecting them to a server-rendered static version on the page
+# RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit/[0-9]|Twitterbot|Pinterest|Google.*snippet)
+# Pruebas http://localhost:8888/devstudio/chailate/social-views/web/2/info/
+RewriteRule web/(\d*)/(.*)/$ http://localhost:8888/devstudio/chailate/social-views/web-details.php?id=$1 [P]
+</ifModule>
