@@ -1,5 +1,9 @@
 <?php
-$SITE_ROOT = "http://localhost:8888/devstudio/chailate/";
+//Local site root
+//$SITE_ROOT = "http://local.chailate:8888/";
+
+//Prod site root
+$SITE_ROOT = "http://chailate.com/";
 
 $jsonData = getData($SITE_ROOT);
 makePage($jsonData, $SITE_ROOT);
@@ -24,7 +28,7 @@ function makePage($data, $SITE_ROOT) {
     <html>
         <head>
             <meta property="og:title" content="<?php echo $data->title; ?>" />
-            <meta property="og:description" content="<?php echo $data->summary; ?>" />
+            <meta property="og:description" content="<?php echo strip_tags($data->summary); ?>" />
             <meta property="og:image" content="<?php echo $SITE_ROOT . $data->imageUrl; ?>" />
             <!-- etc. -->
         </head>

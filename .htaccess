@@ -2,8 +2,8 @@
  RewriteEngine On
 
 # allow social media crawlers to work by redirecting them to a server-rendered static version on the page
-RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit/[0-9]|Twitterbot|Pinterest|Google.*snippet)
-RewriteRule web/(\d*)/(.*)/$ http://localhost:8888/devstudio/chailate/social-views/web-details.php?id=$1 [P]
+#RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit/[0-9]|Twitterbot|Pinterest|Google.*snippet)
+RewriteRule web/(\d*)/(.*)/$ /social-views/web-details.php?id=$1 [P]
 
 # Required to allow direct-linking of pages so they can be processed by Angular
 RewriteCond %{REQUEST_FILENAME} !-f
