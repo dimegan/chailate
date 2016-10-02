@@ -2,7 +2,7 @@
       <div class="row">
         <div class="col-md-12">
 			<div id="photos-portfolio" class="clearfix">
-				<a href="#/web/{{photo.id}}/{{photo.linktitle}}/" ng-repeat="photo in vm.portafolio">
+				<a href="web/{{photo.id}}/{{photo.linktitle}}/" ng-repeat="photo in vm.portafolio">
 				    <img ng-class="photo.myClass" class="img-responsive gall-image animated "
 				      ng-if="photo.isVisible"
 				      ng-click="vm.showModal($event, photo)"
