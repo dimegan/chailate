@@ -27,6 +27,7 @@ function makePage($data, $SITE_ROOT) {
     <!DOCTYPE html>
     <html>
         <head>
+            <meta charset="UTF-8">
             <meta property="og:title" content="<?php echo $data->title; ?>" />
             <meta property="og:description" content="<?php echo strip_tags($data->summary); ?>" />
             <meta property="og:image" content="<?php echo $SITE_ROOT . $data->imageUrl; ?>" />
