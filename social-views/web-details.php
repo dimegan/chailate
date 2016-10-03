@@ -28,6 +28,9 @@ function makePage($data, $SITE_ROOT) {
     <html>
         <head>
             <meta charset="UTF-8">
+            <meta property="fb:app_id" content="1838948626325222" />
+            <meta property="og:image:width" content="600" />
+            <meta property="og:image:height" content="400" />
             <meta property="og:title" content="<?php echo $data->title; ?>" />
             <meta property="og:description" content="<?php echo strip_tags($data->summary); ?>" />
             <meta property="og:image" content="<?php echo $SITE_ROOT . $data->imageUrl; ?>" />
