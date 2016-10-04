@@ -259,6 +259,9 @@ a.coco-color:hover, input.coco-color:hover{
 	color: #fff;
 	margin-right: 20px;
 }
+#fb-bottom{
+	line-height: 20px;
+}
 /*Animation for service list*/
 /*default setings*/
 .coco-service{
