@@ -104,7 +104,7 @@ a.coco-color:hover, input.coco-color:hover{
 	padding-top: 20px;
 	margin-bottom: 80px;
 }
-.home-section p, footer, nav{
+.home-section p, nav{
 	font-size: 20px;
 }
 .my-work{
@@ -239,28 +239,42 @@ a.coco-color:hover, input.coco-color:hover{
 	text-decoration: none;
 	margin-right: 10px;
 }
-.social-links .tw-link:hover{
+.tw-link:hover{
 	color: #1DA1F2;
 }
-.social-links .fb-link:hover{
+.fb-link:hover{
 	color: #3B5998;
 }
-.social-links .ins-link:hover{
+.ins-link:hover{
 	color: #7F44B5;
 }
-.logo-footer{
-	margin: 14px 20px;
+/*Footer style*/
+footer{
+	padding: 20px 0;
+	color: #fff;
+}
+footer h1{
+	margin-bottom: 15px;
+}
+footer a{
+	color: #fff;
 }
 .footer-menu{
 	margin: 20px;
-    float: right;
 }
 .footer-menu a{
 	color: #fff;
 	margin-right: 20px;
 }
+.social-footer{
+	font-size: 20px;
+    margin: 15px 0px;
+}
 #fb-bottom{
 	line-height: 20px;
+}
+.footer-contact{
+	margin: 20px 0;
 }
 /*Animation for service list*/
 /*default setings*/
