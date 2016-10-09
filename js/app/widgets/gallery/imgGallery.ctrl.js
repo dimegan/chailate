@@ -15,6 +15,8 @@
         function activate(){
         	getPortfolio($scope.portfoliotype).then( function(data) {
 				console.log('Activated ImageGallery');
+				vm.portafolio = data;
+				setupCapionClass(data);
 				bindScrollEvent(data);
 			});
         }
@@ -22,7 +24,6 @@
         function getPortfolio(portfoliotype){
 			return dataservice.getPortfolio(portfoliotype).
 				then(function(data) {
-					vm.portafolio = data;
 					return data;
 				});
 		}
@@ -70,6 +71,8 @@
 			});
 		}
 
+		/*Helpers*/
+
 		/*Animation for gallery*/
 		//Hace visible una foto cada 400 ms
 		function showImages(index){
@@ -95,6 +98,34 @@
 			}
 		}
 
+		function setupCapionClass(arrayItems){
+			var index = 0;
+			var captionClass = '';
+			for(var i=0; i < arrayItems.length; i++){
+
+				switch(index){
+					case 0:
+						captionClass = 'azul';
+						break;
+					case 1:
+						captionClass = 'turquesa';
+						break;
+					case 2:
+						captionClass = 'rojo';
+						break;
+					case 3:
+						captionClass = 'rosa';
+						break;
+				}
+				arrayItems[i].captionClass =captionClass;
+				index++;
+
+				if(index > 3){
+					index = 0;
+				}
+			}
+
+		}
 	}
 
 })();

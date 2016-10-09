@@ -3,11 +3,18 @@
         <div class="col-md-12">
 			<div id="photos-portfolio" class="clearfix">
 			  <a href="#" ng-repeat="photo in vm.portafolio">
-			    <img ng-class="photo.myClass" class="img-responsive gall-image animated"
-			      ng-if="photo.isVisible"
-			      ng-click="vm.showModal($event, photo)"
-			      ng-src="{{photo.imageUrl}}"
-			      alt="{{photo.title}}" >
+			  	<div class="gallery-item" ng-click="vm.showModal($event, photo)">
+				    <img ng-class="photo.myClass" class="img-responsive gall-image animated"
+				      ng-if="photo.isVisible"
+				      
+				      ng-src="{{photo.imageUrl}}"
+				      alt="{{photo.title}}" >
+				    <div ng-class="photo.captionClass" class="caption fade-caption text-center">
+				        <h3>{{photo.type}}</h3>
+				        <p>{{photo.description}}</p>
+				        <i class="fa fa-hand-pointer-o fa-3x" aria-hidden="true" title="Haz click para ver la imágen completa"></i>
+			        </div>
+			    </div>
 			  </a> 
 			</div>
 		</div>

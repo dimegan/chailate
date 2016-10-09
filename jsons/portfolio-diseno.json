@@ -1,62 +1,82 @@
 [
 	{
 		"photoId" : 5,
-		"title": "diseno-breake",
+		"title": "Flayer break dance",
 		"imageUrl": "img/portafolio/diseno/diseno-breake.jpg",
-		"isVisible" : true
+		"isVisible" : true,
+		"type" : "Flayer",
+		"description": "Clase de break dance en academia Tutu"
 	},
 	{
 		"photoId" : 5,
-		"title": "diseno-street-dance",
+		"title": "Flayer street dance",
 		"imageUrl": "img/portafolio/diseno/diseno-street-dance.jpg",
-		"isVisible" : true
+		"isVisible" : true,
+		"type" : "Flayer",
+		"description": "Clase de street dance en academia Tutu"
 	},
 	{
 		"photoId" : 5,
 		"title": "diseno-inscripcion",
 		"imageUrl": "img/portafolio/diseno/diseno-inscripcion.jpg",
-		"isVisible" : true
+		"isVisible" : true,
+		"type" : "Flayer",
+		"description": "Promoción en inscripciones de la academia Tutu"
 	},
 	{
 		"photoId" : 6,
-		"title": "diseno-heladeria",
+		"title": "Logo heladeria",
 		"imageUrl": "img/portafolio/diseno/diseno-heladeria.JPG",
-		"isVisible" : true
+		"isVisible" : true,
+		"type" : "Logo",
+		"description": "Imágen corporativa para La heladeria"
 	},
 	{
 		"photoId" : 10,
-		"title": "diseno-anuncios",
+		"title": "Anuncios oportunos",
 		"imageUrl": "img/portafolio/diseno/diseno-anuncios.jpg",
-		"isVisible" : true
+		"isVisible" : true,
+		"type" : "Flayer",
+		"description": "Promociones en avisos oportunos para quehayenjilo.com"
 	},
 	{
 		"photoId" : 4,
-		"title": "diseno-invitacion-boda",
+		"title": "Invitaciones de boda",
 		"imageUrl": "img/portafolio/diseno/diseno-invitacion-boda.jpg",
-		"isVisible" : true
+		"isVisible" : true,
+		"type" : "Invitaciones",
+		"description": "Boda de Mitzi y Ricardo"
 	},
 	{
 		"photoId" : 1,
-		"title": "diseno-bodeguita",
+		"title": "Lona la bodeguita",
 		"imageUrl": "img/portafolio/diseno/diseno-bodeguita.jpg",
-		"isVisible" : true
+		"isVisible" : true,
+		"type" : "Lona",
+		"description": "Publicidad para La bodeguita"
 	},
 	{
 		"photoId" : 2,
-		"title": "diseno-desayuno",
+		"title": "Taller de imágen personal",
 		"imageUrl": "img/portafolio/diseno/diseno-desayuno.jpg",
-		"isVisible" : true
+		"isVisible" : true,
+		"type" : "Flayer",
+		"description": "Publicidad del taller de imágen personal"
 	},
 	{
 		"photoId" : 3,
-		"title": "diseno-invitacion-bautizo",
+		"title": "Invitaciones de bauitizo",
 		"imageUrl": "img/portafolio/diseno/diseno-bautizo.jpg",
-		"isVisible" : true
+		"isVisible" : true,
+		"type" : "Invitaciones",
+		"description": "Bautizo de Gael y Yahir"
 	},
 	{
 		"photoId" : 3,
-		"title": "diseno-invitacion-bautizo",
+		"title": "Invitaciones de bauitizo",
 		"imageUrl": "img/portafolio/diseno/diseno-invitacion-bautizo.jpg",
-		"isVisible" : true
+		"isVisible" : true,
+		"type" : "Flayer",
+		"description": "Bautizo de Gael y Yahir (set completo)"
 	}	
 ]
