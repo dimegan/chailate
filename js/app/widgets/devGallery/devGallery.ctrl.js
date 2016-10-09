@@ -13,20 +13,19 @@
         function activate(){
         	getPortfolio($scope.portfoliotype).then( function(data) {
 				console.log('Activated DevGallery');
+				setupUrlFriendly(data);
+				setupCapionClass(data);
+				vm.portafolio = data;
 				bindScrollEvent(data);
 			});
         }
 
         function getPortfolio(portfoliotype){
 			return dataservice.getPortfolio(portfoliotype).
-				then(function(data) {
-					setupItems(data);
-					vm.portafolio = data;
+				then(function(data) {	
 					return data;
 				});
 		}
-
-        
 
 		function bindScrollEvent(){
 			//innerHeight = view port size
@@ -63,7 +62,7 @@
 		}
 
 		/*helpers*/
-		function setupItems(items){
+		function setupUrlFriendly(items){
 			for(var i = 0; i < items.length; i++ ){
 				var title = items[i].title;
 				//add new property linktitle. This does not have whitespaces
@@ -93,6 +92,33 @@
 		function hideImages(){
 			for(var i = 0; i <  vm.portafolio.length; i++){
 				 vm.portafolio[i].isVisible = false;
+			}
+		}
+
+		function setupCapionClass(arrayItems){
+			var index = 0;
+			var captionClass = '';
+			for(var i=0; i < arrayItems.length; i++){
+				switch(index){
+					case 0:
+						captionClass = 'azul';
+						break;
+					case 1:
+						captionClass = 'turquesa';
+						break;
+					case 2:
+						captionClass = 'rojo';
+						break;
+					case 3:
+						captionClass = 'rosa';
+						break;
+				}
+				arrayItems[i].captionClass = captionClass;
+				index++;
+
+				if(index > 3){
+					index = 0;
+				}
 			}
 		}
 	}

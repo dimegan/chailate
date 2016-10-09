@@ -371,6 +371,9 @@ footer a{
     -ms-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
 }
+.gallery-item.item-dev img{
+	height: 195px;
+}
 .gallery-item .caption {
 	opacity: 0;
     background-color: rgba(177,89,131,0.85);
