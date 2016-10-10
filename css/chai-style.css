@@ -66,6 +66,7 @@ a.coco-color:hover, input.coco-color:hover{
 	overflow: hidden;
 	height: 100vh;
 }
+
 .intro-header .jumbotron{
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -336,7 +337,15 @@ footer a{
 .mkt-back{
 	background: url(../img/portafolio/mkt/mkt-back.jpg) repeat center top;
 }
-
+.parallax { 
+    /* Need a image background */
+    /* Nedd a specific height */
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*image gallery*/
 .modal-dialog.gallery-modal{
 	/*max-width: 650px;*/
