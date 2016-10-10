@@ -7,7 +7,8 @@
 
 	function analyticsservice($http, appConfig, $window, $location){
 		var service = {
-			trackPageView : trackPageView
+			trackPageView : trackPageView,
+			trackEvent : trackEvent
 		};
 
 		return service;
@@ -16,8 +17,27 @@
 			if($window.ga){
 				$window.ga('send', 'pageview', { page: $location.url() });
 			}else{
-				console.log('Google analytics is off');
+				reportAnalyticsOff();
 			}
+		}
+
+		function trackEvent(category, action, info){
+			if($window.ga){
+				$window.ga('send', {
+				  hitType: 'event',
+				  eventCategory: category,
+				  eventAction: action,
+				  eventLabel: info
+				});
+			}else{
+				reportAnalyticsOff();				
+			}	
+		}
+
+		/*helpers*/
+
+		function reportAnalyticsOff(){
+			console.log('GOOGLE ANALYTICS IS OFF');
 		}
 	}
 })();

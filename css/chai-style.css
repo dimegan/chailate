@@ -341,6 +341,10 @@ footer a{
 .modal-dialog.gallery-modal{
 	/*max-width: 650px;*/
 }
+.chai-modal-header{
+	background-color: #b15983;
+    color: #fff;
+}
 .animate-enter {
 	-webkit-transition: 5s linear all; /* Chrome */
 	transition: 5s linear all;

@@ -1,9 +1,11 @@
 <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg gallery-modal" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header chai-modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title text-center" id="myModalLabel"> {{currentimg.title}}</h4>
+        <h4 class="modal-title text-center" id="myModalLabel">  
+          {{currentimg.type}} - {{currentimg.description}}
+        </h4>
       </div>
 
       <div class="modal-body">
