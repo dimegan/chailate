@@ -462,3 +462,10 @@ footer a{
 .web-description a{
 	margin-top: 10px;
 }
+.ajax-loader{
+	color: red;
+}
+/*loading indicator*/
+.loading-indicator{
+	padding: 200px;
+}

@@ -32,7 +32,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body ng-app="chaiApp">
     <header>
       <nav class="navbar navbar-default chai-dark-color">
         <div class="container-fluid">
@@ -77,7 +77,8 @@
         </div><!-- /.container-fluid -->
       </nav>
     </header>
-    <div ng-view autoscroll="true">
+    <loading-indicator></loading-indicator>
+    <div ng-if="!isRouteLoading" ng-view autoscroll="true">
       <!-- Page content. Using angular for load -->
     </div>
     <footer class="chai-dark-color">
@@ -184,6 +185,8 @@
     <script src="js/app/widgets/gallery/imgGallery.js"></script>
     <script src="js/app/widgets/devGallery/devGallery.ctrl.js"></script>
     <script src="js/app/widgets/devGallery/devGallery.js"></script>
+    <!-- loading indicator -->
+    <script src="js/app/widgets/loadingIndicator/loadingIndicator.js"></script>
 
     <!-- home -->
     <script src="js/app/home/home.module.js"></script>
