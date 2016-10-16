@@ -81,7 +81,9 @@
     <div ng-if="!isRouteLoading" ng-view autoscroll="true">
       <!-- Page content. Using angular for load -->
     </div>
-    <footer class="chai-dark-color">
+    <!-- hide-footer and show-footer are css classes for hide and show the footer while the view is loading
+    and avoid UX issues-->
+    <footer ng-if="!isRouteLoading" class="chai-dark-color hide-footer" ng-class="'show-footer'">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">

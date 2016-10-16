@@ -469,3 +469,9 @@ footer a{
 .loading-indicator{
 	padding: 200px;
 }
+.hide-footer{
+	display: none;
+}
+.show-footer{
+	display: block;
+}

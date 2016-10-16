@@ -14,11 +14,11 @@
 		        scope.isRouteLoading = false;
 
 		        $rootScope.$on('$routeChangeStart', function() {
-		        	console.log('Is loading = true');
+		          scope.isRouteLoading = true;
 		        });
 
 		        $rootScope.$on('$routeChangeSuccess', function() {
-		        	console.log('Is loading = false');
+		          scope.isRouteLoading = false;
 		        });
 		    }
 		};
