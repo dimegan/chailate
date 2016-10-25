@@ -3,30 +3,40 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
           //grunt task configuration will go here
-        ngAnnotate: {
-            options: {
-                singleQuotes: true
-            },
-            app: { //"app" target
-                files: {
-                    'js/build-grunt/min-safe/app.module.js': ['js/app/app.module.js'],
-                    'js/build-grunt/min-safe/blocks/router/router.module.js': ['js/app/blocks/router/router.module.js'],
-                    'js/build-grunt/min-safe/blocks/router/routehelper.js' : ['js/app/blocks/router/routehelper.js']
+        jshint: {
+            dev: {
+                src: [
+                    'gruntfile.js',
+                    'js/app/app.module.js',
+                    'js/app/blocks/router/*.js'
+                ],
+                options: {
+                    jshintrc: 'grunt-options/jshintrc.json'
                 }
+            }
+        },
+        clean: {
+            options: { 
+                force: true 
+            },
+            all: { //target
+                src: ['js/build-grunt/min/', 'js/build-grunt/min-safe/']
             }
         },
         concat: {
             js: { //target
-                src: ['js/build-grunt/min-safe/app.module.js'],
+                src: ['js/app/app.module.js',
+                    'js/app/blocks/router/router.module.js', 
+                    'js/app/blocks/router/routehelper.js'],
                 dest: 'js/build-grunt/min/app.js'
             }
         },
-        uglify: {
+        uglify: {/*
             options: {
                 mangle: false
-            },
+            },*/
             js: { //target
-                src: ['js/app/app.module.js'],
+                src: ['js/build-grunt/min/app.js'],
                 dest: 'js/build-grunt/min/app.js'
             }
         } 
@@ -44,12 +54,13 @@ module.exports = function(grunt) {
     });
     
     //load grunt tasks
-    grunt.loadNpmTasks('grunt-ng-annotate');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
     //register grunt default task
     //grunt.registerTask('default', ['ngAnnotate','concat','uglify']);
-    grunt.registerTask('default', ['uglify']);
-}
+    grunt.registerTask('default', ['jshint','clean','concat','uglify']);
+};
 
