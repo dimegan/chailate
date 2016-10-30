@@ -9,10 +9,10 @@
 
 		var directive = {
 			restrict: 'EA',
-		    controllerAs: "vm",
-		    templateUrl: "js/app/widgets/devGallery/dev-gallery.html",
+		    controllerAs: 'vm',
+		    templateUrl: 'js/app/widgets/devGallery/dev-gallery.html',
 		    scope: {
-		      portfoliotype: "="
+		      portfoliotype: '='
 		    },
 		    /*link: link,*/
 		    controller: 'DevGalleryCtrl'

@@ -7,10 +7,10 @@
 
 		var directive = {
 			restrict: 'EA',
-		    controllerAs: "vm",
-		    templateUrl: "js/app/widgets/gallery/img-gallery.html",
+		    controllerAs: 'vm',
+		    templateUrl: 'js/app/widgets/gallery/img-gallery.html',
 		    scope: {
-		      portfoliotype: "="
+		      portfoliotype: '='
 		    },
 		    /*link: link,*/
 		    controller: 'ImgGalleryCtrl'

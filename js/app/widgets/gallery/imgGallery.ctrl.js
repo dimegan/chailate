@@ -41,9 +41,9 @@
         		//When view port is smaller to document height star the animation 
         		//when user scroll to the bottom of the page
         		var isActiveAnimation = false;
-        		var portafolioWrapper = $(document.getElementById("photos-portfolio"));
+        		var portafolioWrapper = $(document.getElementById('photos-portfolio'));
         		var pixForStart = 100;
-				angular.element($window).bind("scroll", function() {
+				angular.element($window).bind('scroll', function() {
 		        	
 		             // Obtenemos la posicion del scroll en pantalla
 	            	if (!isActiveAnimation && ($window.innerHeight + window.scrollY) >= 
@@ -52,7 +52,7 @@
 	            		//Hacemos visibles las imagenes cuando el usuario llega al final 
 	            		//de la página
 	            		hideImages();
-	            		showImages(0)		
+	            		showImages(0);		
 	            	}
 		        });
 			}

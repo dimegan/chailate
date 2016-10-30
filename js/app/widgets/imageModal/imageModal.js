@@ -7,10 +7,10 @@
 
 		var directive = {
 			restrict: 'EA',
-		    controllerAs: "modal",
-		    templateUrl: "js/app/widgets/imageModal/image-modal.html",
+		    controllerAs: 'modal',
+		    templateUrl: 'js/app/widgets/imageModal/image-modal.html',
 		    scope: {
-		      currentimg: "="
+		      currentimg: '='
 		    },
 		    controller: function(){
 		    }

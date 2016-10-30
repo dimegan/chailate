@@ -5,7 +5,6 @@
 		'chaiApp.widgets',
 		'chaiApp.home',
 		'chaiApp.design',
-		'chaiApp.mkt',
 		'chaiApp.dev',
 		'chaiApp.photo',
 		'chaiApp.devDetail'

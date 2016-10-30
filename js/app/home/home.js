@@ -53,7 +53,7 @@
 		function navigateToContact(){
 			var contactAnchor =angular.element('#contacto').offset();
 			angular.element('body').animate(
-				{scrollTop: contactAnchor.top}, "slow");
+				{scrollTop: contactAnchor.top}, 'slow');
 		}
 
 		function getWorkGallery(){
@@ -66,7 +66,7 @@
 
 		//Flag for work gallery animation
 		var isSelectedWork = false;
-		var workSection = $('.my-work')
+		var workSection = $('.my-work');
 		function selectedWork($event, selectedImage){
 			if(!isSelectedWork){
 				isSelectedWork = true;
@@ -90,7 +90,7 @@
 				slideDownActive = true;
 				var cocoServ = $($event.currentTarget);
 				/*Show service details using animation*/
-				cocoServ.find('.inner-feature').hide()
+				cocoServ.find('.inner-feature').hide();
 				cocoServ.find('.inner-feature').fadeIn(600);
 			}
 		}
@@ -99,25 +99,25 @@
 			slideDownActive = false;
 			var cocoServ = $($event.currentTarget);
 			/*Show service icon and name using animation*/
-			cocoServ.find('.inner-feature').hide()
+			cocoServ.find('.inner-feature').hide();
 			cocoServ.find('.inner-feature').fadeIn(600);
 			
 		}
 
 		function getServiceClass(serviceType){
-			var imgServ = "";
+			var imgServ = '';
 			switch(serviceType){
 				case 1:
-					imgServ = "feature-design";
+					imgServ = 'feature-design';
 					break;
 				case 2:
-					imgServ = "feature-mrkt";
+					imgServ = 'feature-mrkt';
 					break;
 				case 3:
-					imgServ = "feature-photos";
+					imgServ = 'feature-photos';
 					break;
 				case 4:
-					imgServ = "feature-dev";
+					imgServ = 'feature-dev';
 					break;
 			}
 
@@ -146,7 +146,7 @@
 		/*Helpers*/
 		function validateContactForm(){
 			var contactEmail = homeCtrl.contact.email;
-			if(contactEmail == 0){
+			if(contactEmail.length === 0){
 				homeCtrl.contactError.message = 'Ingresa un mail para poder enviar tu comentario';
 			}else{
 				if(!validateEmail(contactEmail)){
@@ -163,8 +163,11 @@
 		}
 
 		function validateEmail(email) {
-		  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-		  return re.test(email);
+		  var urlRegex= new RegExp(''+ 
+		  	/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))/.source + 
+		  	/@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.source
+		  );
+		  return urlRegex.test(email);
 		}
 	}
 })();
