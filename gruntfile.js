@@ -7,15 +7,7 @@ module.exports = function(grunt) {
             dev: {
                 src: [
                     'gruntfile.js',
-                    'js/app/app.module.js',
-                    'js/app/blocks/**/*.js',
-                    'js/app/core/*.js',
-                    'js/app/widgets/**/*.js',
-                    'js/app/home/*.js',
-                    'js/app/design/*.js',
-                    'js/app/dev/*.js',
-                    'js/app/photo/*.js',
-                    'js/app/dev-detail/*.js'
+                    'js/app/**/*.js'
                 ],
                 options: {
                     jshintrc: 'grunt-options/jshintrc.json'
@@ -26,7 +18,7 @@ module.exports = function(grunt) {
             options: { 
                 force: true 
             },
-            all: { //target
+            all: {
                 src: ['js/build-grunt/min/', 'js/build-grunt/temp/']
             }
         },
@@ -35,23 +27,16 @@ module.exports = function(grunt) {
                 //Se utiliza para no cambiar de nombre a las variable tuvimos un problema con config.js
                 mangle: false
             },
-            js: { //target
+            js: { 
                 expand: true,
-                src: ['app/app.module.js', 
-                    'app/blocks/**/*.js',
-                    'app/core/*.js',
-                    'app/widgets/**/*.js',
-                    'app/home/*.js',
-                    'app/design/*.js',
-                    'app/dev/*.js',
-                    'app/photo/*.js',
-                    'app/dev-detail/*.js'],
+                src: ['app/**/*.js'],
                 dest: 'js/build-grunt/temp/',
                 cwd: 'js/'
             }
         },
         concat: {
-            js: { //target
+            js: { 
+                //Necesitamos escribir concatenar primero los module files y despues los demas archivos
                 src: ['js/build-grunt/temp/**/*.module.js',
                 'js/build-grunt/temp/**/*.js'],
                 dest: 'js/build-grunt/min/app.js'
