@@ -40,6 +40,13 @@ module.exports = function(grunt) {
                 src: ['js/build-grunt/temp/**/*.module.js',
                 'js/build-grunt/temp/**/*.js'],
                 dest: 'js/build-grunt/min/app.js'
+            },
+            vendor: {
+                //Jquery y Angular necesitan cargarse primero, despues bootstrap y angular-route
+                src: ['js/vendors/jquery-11.min.js',
+                'js/vendors/angular.min.js',
+                'js/vendors/*.js'],
+                dest: 'js/build-grunt/min/vendors.js'
             }
         } 
 
