@@ -11,7 +11,8 @@
 			getWorkGallery : getWorkGallery,
 			getPortfolio : getPortfolio,
 			sendComments : sendComments,
-			getWebDetails : getWebDetails
+			getWebDetails : getWebDetails,
+			saveAnswer : saveAnswer
 		};
 
 		return service;
@@ -75,6 +76,20 @@
 			  });
 		}
 
+		function saveAnswer(contact){
+			
+			var answer = buildAnswerForSave(contact);
+			var jsonAnswer = JSON.stringify(answer);
+			var serviceUrl = appConfig.apiBaseUrl + 'answers';
+
+			return $http.post(serviceUrl, jsonAnswer)
+				.then(saveAnswerComplete);
+
+			function saveAnswerComplete(data, status, headers, config){
+				return data.data;
+			}
+		}
+
 		/*Helpers*/
 		function getPortfolioService(type){
 			var serviceUrl = '';
@@ -90,6 +105,30 @@
 					break;
 			}
 			return serviceUrl;
+		}
+
+		function buildAnswerForSave(contact){
+			//Setup contact data string
+			var contactData = 'Name: ' + contact.name + ' <br>' +
+				'Email: ' + contact.email + ' <br>' + 
+				'Message: ' + contact.message;
+			
+			var answerDet = {
+					questionId : appConfig.commentQuestId,
+					value : contactData
+				};
+
+			var details = [];
+			details.push(answerDet);
+
+			var answer = {
+					surveyId : appConfig.surveyId,
+					key : 'contact-data',
+					usedTime : 0,
+					details : details
+				};
+
+			return answer;
 		}
 	}
 })();

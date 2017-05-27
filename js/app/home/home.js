@@ -129,7 +129,7 @@
 				homeCtrl.showContact = false;
 
 				//Send email with contact message
-				dataservice.sendComments(homeCtrl.contact).
+				dataservice.saveAnswer(homeCtrl.contact).
 					then(function(data) {
 					    homeCtrl.contact.name = '';
 					    homeCtrl.contact.message = '';
