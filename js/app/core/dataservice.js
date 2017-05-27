@@ -10,9 +10,9 @@
 		var service = {
 			getWorkGallery : getWorkGallery,
 			getPortfolio : getPortfolio,
-			sendComments : sendComments,
 			getWebDetails : getWebDetails,
-			saveAnswer : saveAnswer
+			saveAnswer : saveAnswer,
+			getContactData : getContactData
 		};
 
 		return service;
@@ -86,6 +86,24 @@
 				.then(saveAnswerComplete);
 
 			function saveAnswerComplete(data, status, headers, config){
+				return data.data;
+			}
+		}
+
+		function getContactData(){
+			var date = new Date();
+			var direction = 'before';
+
+			var serviceUrl = appConfig.apiBaseUrl + 'answer-by-survey/' + 
+				appConfig.surveyId;
+
+			return $http.get(serviceUrl)
+				.then(getLastAnswerComplete)
+				.catch(function (message){
+					console.log('Error in getLastAnswer. Message:' + message);
+				});
+
+			function getLastAnswerComplete(data, status, headers, config){
 				return data.data;
 			}
 		}

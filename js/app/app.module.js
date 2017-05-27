@@ -7,6 +7,7 @@
 		'chaiApp.design',
 		'chaiApp.dev',
 		'chaiApp.photo',
-		'chaiApp.devDetail'
+		'chaiApp.devDetail',
+		'chaiApp.contactData'
 	]);
 })();

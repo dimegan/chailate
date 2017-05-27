@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+    	<div class="col-md-12">
+    		<div class="contact-responses">
+				<h1 class="text-center">Formulario de contacto</h1>
+				<ul class="list-group">
+				  <li class="list-group-item" ng-repeat="info in contactCtrl.contactData">
+				  	<span class="help-block">
+					    {{ info.creationDate | date:'dd/MM/yyyy' }}
+					</span>
+					<p ng-bind-html="info.details[0].value">
+					</p>
+				  </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

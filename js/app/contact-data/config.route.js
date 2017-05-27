@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 
-	angular.module('chaiApp.devDetail').run(appRun);
+	angular.module('chaiApp.contactData').run(appRun);
 
 	function appRun(routehelper){
 		routehelper.configureRoutes(getRoutes());
@@ -10,11 +10,11 @@
 	function getRoutes(){
 		return [
 			{
-				url: '/web/:detailid/:detail/',
+				url: '/contact-data',
 				config: {
-					templateUrl: 'js/app/dev-detail/dev-detail.html',
+					templateUrl: 'js/app/contact-data/contact-data.html',
 			        controller: 'ContactDataCtrl',
-			        controllerAs: 'devCtrl'
+			        controllerAs: 'contactCtrl'
 				}
 			}
 		];
