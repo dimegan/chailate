@@ -10,6 +10,14 @@
         commentQuestId : '5928e90285f25fe602000005'
     });
 
+    /*
+    core.constant('appConfig', 
+    {
+        surveyId : '592ce48f39eb360536000004',
+        commentQuestId : '592ce48f39eb360536000005'
+    });
+    */
+
     core.config(configure);
 
     //configure.$inject = ['$routeProvider', 'routehelperConfigProvider', 'locationProvider'];
