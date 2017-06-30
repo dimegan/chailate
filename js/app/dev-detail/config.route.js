@@ -13,7 +13,7 @@
 				url: '/web/:detailid/:detail/',
 				config: {
 					templateUrl: 'js/app/dev-detail/dev-detail.html',
-			        controller: 'ContactDataCtrl',
+			        controller: 'DevDetailCtrl',
 			        controllerAs: 'devCtrl'
 				}
 			}

@@ -12,7 +12,6 @@
 
 		function activate(){
 			//Tracking google analytics view
-			console.log('Load dev-detail view');
 			analyticsservice.trackPageView();
 			getContactData();
 		}

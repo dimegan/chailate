@@ -5,7 +5,7 @@
 		"imageUrl": "img/portafolio/web/blog-estrategias.jpg",
 		"isVisible" : true,
 		"screenshot": "img/portafolio/web/blog-estrategias-full.jpg",
-		"url": "http://estrategiasdocentes.com/",
+		"url": "",
 		"summary": "<p>La comunidad de estrategias docentes tiene el objetivo intercambiar saberes, formular preguntas y apoyar el uso de las nuevas tecnologías en la educación.</p><p>El blog fue diseñado con la intención de tener una plataforma a través de la cual, sus editores pudieran publicar artículos educativos que ayuden a los maestro en la formación de sus alumnos.</p><p>Fue construido utilizando Wordpress, Bootrap, Responsive Design y Facebook plugins.</p>",
 		"type" : "Blog",
 		"description": "Plataforma educativa y de apoyo a los docentes"
